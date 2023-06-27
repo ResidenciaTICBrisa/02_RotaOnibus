@@ -41,5 +41,5 @@ Um épico é uma história de usuário que ainda não foi detalhada, é muito gr
 ## Histórico de Versão
 
 | Versão | Alteração |  Responsável  | Revisor | Data  |
-| :----: | :-------: | :-----------: | :-----: | :---: |
+| ------ | :-------: | :-----------: | :-----: | :---: |
 |  1.0   | Criando da introdução e estrutura épicos | Leonardo Vitoriano |  -   | 21/06/23 |
