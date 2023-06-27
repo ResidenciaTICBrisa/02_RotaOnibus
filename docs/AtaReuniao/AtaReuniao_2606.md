@@ -32,7 +32,7 @@ Os dúvidas geradas do *Brainstorming* pode ser encontrado na tabela 1, aonde ca
 | D4  | Entender diretamente o que temos que fazer:<br>1) As rotas de onibus já existem e devemos otimiza-las<br>2) Devemos criar uma nova rota já otimizada  |
 <p align="center">Tabela 1. Dúvidas</p>
 
-Com o *Brainstorming* também foi possível definir as tarefas da primeira entrega, que foram discutidas inicialmente com o cliente mas ainda não formalizadas. Sendo assim, as tarefas da **Entrega 1** são visualizadas na Tabela 2, aonde cada tarefa tem o seu identificador *Tn* para rastreabilidade, sendo *T* de Tarefa e *n* o número da tarefa, e que possa
+Com o *Brainstorming* também foi possível definir as tarefas da primeira entrega, que foram discutidas inicialmente com o cliente mas ainda não formalizadas. Sendo assim, as tarefas da **Entrega 1** são visualizadas na Tabela 2, aonde cada tarefa tem o seu identificador *Tn* para rastreabilidade, sendo *T* de Tarefa e *n* o número da tarefa.
 
 | Identificador (*Tn*) | Tarefa |
 | -   | - |
@@ -44,17 +44,20 @@ Com o *Brainstorming* também foi possível definir as tarefas da primeira entre
 
 ## 4. Decisões
 
-&emsp;&emsp; Enquanto a reunião com o cliente não ocorre para que as dúvidas sejam esclarecidas, foi decidido as seguintes *issues* para a *Sprint 1*, :
+&emsp;&emsp; Enquanto a reunião com o cliente não ocorre para que as dúvidas sejam esclarecidas, foi decidido realizar tarefas que visam explorar o domínio do problema em si e tecnologias que consigam implementar a solução do problema como um todo.
 
-
-- Estudar sobre grafos até entender o algoritmo dijkrstra
-
-
-
+Dessa forma, estão descritas na Tabela 3 as *issues* para a *Sprint 1*, aonde cada *issues* tem o seu identificador *Issue n* para rastreabilidade, sendo *n* o número da *Issue*, e o(s) integrante(s) responsável(eis) pela realização da *issue*.
+ 
+| Identificador (*Issue n*) | *Issue* | Integrante(s) responsável(eis) |  
+| -   | - | - | 
+| Issue 2  | Realizar Ata de reunião 26/06/2023 | Leonardo |
+| Issue 3  | Estudar sobre grafos até entender o algoritmo dijkrstra  | Todos |
+| Issue 4  | Estudar sobre o Django e Django Rest Framework | Leonardo e Lucas |
+| Issue 5  | Estudar sobre o funcionamento do DFNoPonto e semelhantes. | João, Luiz, Natália |
+<p align="center">Tabela 3. Issues Sprint 1</p>
 
 
 ## 5. Histórico de Versão
-
 | Versão | Alteração | Responsável | Revisor | Data  |
 | :----: | :-------: | :---------: | :-----: | :---: | 
 | 1.0    | Criando Ata de Reunião   | Leonardo Vitoriano | - | 27/06 |
