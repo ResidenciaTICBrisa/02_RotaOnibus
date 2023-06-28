@@ -8,5 +8,5 @@
     
 - **Sprints**
 
-  - **Sprint Planning**
-    - [Ata Reuniao 26/06/23](/AtaReuniao/AtaReuniao_2606.m)
+  - **Sprint 1**
+    - [Ata Reuniao 26/06/23](/AtaReuniao/AtaReuniao_2606.md)
