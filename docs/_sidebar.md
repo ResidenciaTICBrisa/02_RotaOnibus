@@ -11,6 +11,6 @@
   - **Sprint 1**
     - [Ata Reuniao 26/06/23](/AtaReuniao/AtaReuniao_2606.md)
     - [Estudo Django e Django REST Framework](/Estudos/Django.md)
-    - [Estudo Grafos e o Algoritmo de Dijkrstra](/Estudos/Grafos.md)
+    - [Estudo Grafos e o Algoritmo de Dijkrstra](./Estudos/Grafos.md)
 
 
