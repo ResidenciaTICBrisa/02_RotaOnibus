@@ -17,3 +17,21 @@ O desafio consiste em determinar se é possível traçar um caminho que passe po
 
 ![Pontes de Königsberg](./assets/Konigsberg_bridges.png)
 
+
+## Solução do problema das pontes de Königsberg
+
+
+Como mencionado anteriormente, Euler foi o matemático que conseguiu resolver o problemas das pontes de Königsberg. Para resolver, ele propôs simplificar o problema em um modelo menor, no qual um circulo representa a terra firme e as linhas representam as pontes. A imagem representando é mostrada novamente na imagem abaixo.
+
+
+![Grafo de Euler para Pontes de Königsberg](./assets/K%C3%B6nigsberg_graph.png)
+
+A solução consiste em mostrar que não é possível retornar a um vértice (terra firme) caso o número de pontes conectadas a ele seja ímpar. Isso ocorre porque, nesse caso, ao sair de um vértice que é o ponto inicial e final do destino e percorrer todas as arestas (pontes), acabaríamos fora do vértice. Portanto, observe que no problema proposto, todos os vértices possuem um número ímpar de arestas, e o problema requer que comecemos e terminemos no mesmo vértice. Ao percorrer todas as arestas, sempre teríamos passado uma quantidade ímpar de arestas conectadas a esse vértice, o que mostra que não há solução para esse problema.
+
+No entanto, há uma única possibilidade de sair de um vértice e retornar a ele passando apenas uma vez pelas arestas. Grafos que atendem a essa condição são chamados de grafos eulerianos e seguem o seguinte teorema:
+
+*Um grafo será euleriano se for conexo e todos os seus vértices tiverem um número par de arestas conectadas a eles.*
+
+
+## Referências
+
