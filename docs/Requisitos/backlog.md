@@ -1,4 +1,35 @@
-# Backlog
+# Requisitos 
+
+<!-- Backlog -->
+## 1. Elicitação
+
+A partir da técnica de elicitação de requisitos Brainstorming, realizado pelo equipe na [Ata de Reunião 26/06/23](../AtaReuniao/AtaReuniao_2606.md), foi possível identificar os seguintes requisitos funcionais e não funcionais encontradas, respectivamente, nas Tabelas 1 e 2. 
+
+Requisitos Funcionais:
+
+| Código | Requisito |
+|   -    |    -      |
+|   RF1  | A API deve receber as coordenadas do ponto partida e do ponto chegada |
+|   RF2  | A API deve validar as coordenadas dos pontos de entrada |
+|   RF3  | A API deve calcular a menor rota, por rodovias, entre os pontos de entrada |
+|   RF4  | A API deve retornar a menor rota, por rodovias, entre os pontos de entrada |
+<p align="center">Tabela 1. Requisitos Funcionais</p>
+
+Requisitos Não Funcionais:
+
+| Código  | Requisito |
+|   -     |    -      |
+|   RNF1  | A API deve ser desenvolvida em Python usando o Framework Django Rest |
+|   RNF2  | A API deve ser RESTful |
+|   RNF3  | A API deve possui tempo de resposta de até 20 segundos |
+|   RNF4  | A entrada dos pontos na API devem ser um arquivo JSON |
+|   RNF5  | A entrada dos pontos na API devem conter a latitude e longitude |
+|   RNF6  | A saída da da API deve ser um arquivo JSON  |
+|   RNF7  | Os pontos de retorno do arquivo JSON devem conter a latitude e longitude |
+|   RNF8  | Os pontos de retorno do arquivo JSON devem ser paradas de onibus existentes vida real |
+|   RNF9  | A API deve considerar trânsito e horários de pico, em tempo de execução |
+<p align="center">Tabela 2. Requisitos Não Funcionais</p>
+
 
 ## 1. Introdução
 
@@ -32,11 +63,16 @@ para os desenvolvedores, pois definem pontos que devem ser considerados durante 
 
 Um épico é uma história de usuário que ainda não foi detalhada, é muito grande ou ainda possui muita incerteza e portanto não pode ser transformada em incremento do produto. O épico deve ser separado em histórias de usuário menores. 
 
-#### Épico 01: Gerenciamento de Perfil
+### Épico 01: Serviço de rotas
 
 | História de Usuário  | Eu, como usuário, gostaria de... | Para poder...                         | Prioridade |
 | -----------------|----------------------------------|---------------------------------------|------------|
 | US1 |  Criar uma página                 | Escrever minhas anotações             | M          |
+
+
+## Requisitos Não Funcionais
+
+
 
 ## Histórico de Versão
 
