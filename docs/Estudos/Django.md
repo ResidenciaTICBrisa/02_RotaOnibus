@@ -21,7 +21,7 @@ O Django utiliza um padrão similar ao MVC model-view-controller, porém, aqui c
 
     V: View Equivalente ao controller do MVC.
 
-<!-- [Imagem](Estudos/assets/ArquiteturaDjango.jpeg) -->
+![Imagem](assets/ArquiteturaDjango.jpeg)
 
 ## 3. Django REST Framework
 
