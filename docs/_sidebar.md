@@ -14,4 +14,7 @@
       - [Django Rest Framework](./Aplicacao/DRF.md)
     - [Estudo Grafos e o Algoritmo de Dijkrstra](./Estudos/Grafos.md)
 
+  - **Sprint 2**
+    - [Ata Reuniao 03/07/23](./AtaReuniao/AtaReuniao_0307.md)
+    - [Open Street Map](./Estudos/OpenStreetMap.md)
 
