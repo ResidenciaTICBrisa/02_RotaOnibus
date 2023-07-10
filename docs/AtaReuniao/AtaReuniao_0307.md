@@ -71,7 +71,6 @@ Foram apresentados e discutidos alguns requisitos funcionais (presentes na tabel
 
 | Identificador (*Rn*) | Requisito não funcional |
 | -   | - |
-
 | R1  | A API deve ser desenvolvida em Python usando o Framework Django Rest|
 | R2  | API deve receber a solicitação e respondê-la em até 30 segundos|
 | R3  | API deve ser RESTful|
@@ -87,7 +86,7 @@ Foram apresentados e discutidos alguns requisitos funcionais (presentes na tabel
 
 ## 4. Decisões
 
-&emsp;&emsp; A reunião com o clinte foi marcada para o dia 04/07/2023, e foi decidido que após essa reunião outra será marcada para estabelecer as issues da Sprint 2. 
+&emsp;&emsp; A reunião com o cliente foi marcada para o dia 04/07/2023, e foi decidido que após essa reunião outra será marcada para estabelecer as issues da Sprint 2. 
 
 ## 5. Histórico de Versão
 | Versão | Alteração | Responsável | Revisor | Data  |
