@@ -22,7 +22,7 @@
 
 &emsp;&emsp; 
 
-Témino da sprint definida pelo grupo no dia 26/06/23, com as issues descritas na tabela 1.
+Témino da sprint definida pelo grupo no dia 26/06/23, com as issues descritas na tabela 1. onde cada issues tem o seu identificador Issue n para rastreabilidade, sendo n o número da Issue, e o(s) integrante(s) responsável(eis) pela realização da issue.
 
 | Identificador (*Issue n*) | *Issue* | Integrante(s) responsável(eis) |  
 | -   | - | - | 
