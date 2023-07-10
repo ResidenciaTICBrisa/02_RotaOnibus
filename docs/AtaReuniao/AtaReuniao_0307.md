@@ -56,33 +56,7 @@ As tarefas da primeira entrega, se mantiveram para serem formalizadas com o clie
 | T4  | API operando somente no DF  |
 <p align="center">Tabela 3. Entrega 1</p>
 
-Foram apresentados e discutidos alguns requisitos funcionais (presentes na tabela 4 ) e não funcionais (presentes na tabela 5 ) para serem validados com o cliente, onde cada tarefa tem o seu identificador *Rn* para rastreabilidade, sendo *R* de Requisito e *n* o número do requisito.
-
-| Identificador (*Rn*) | Requisito funcional |
-| -   | - |
-| R1  | Eu, como usuário, gostaria de enviar 2 pontos no mapa do brasil, para que eu pudesse receber a menor rota de onibus entre os pontos|
-| R2  | Receber os pontos de origem e destino: A API deve permitir que o usuário envie os pontos de origem e destino, especificando as coordenadas de latitude e longitude.|
-| R3  | Validar os pontos: A API deve realizar a validação dos pontos recebidos, garantindo que sejam válidos e estejam dentro do território do Brasil.|
-| R4  | Calcular a menor rota: A API deve implementar um algoritmo para calcular a menor rota de ônibus entre os pontos fornecidos. Isso pode envolver o uso de algoritmos de roteirização, como o algoritmo de Dijkstra, por exemplo.|
-| R5  | Retornar a rota calculada: A API deve retornar a rota de ônibus calculada ao usuário, normalmente em um formato estruturado, como JSON. A rota pode incluir informações como pontos intermediários, distâncias, tempos de viagem estimados e instruções de direção.|
-| R6  | Considerar informações de transporte público: A API pode incorporar informações sobre horários e itinerários de ônibus para fornecer uma rota precisa que leve em conta as opções disponíveis de transporte público.|
-| R7  | Tratar exceções e erros: A API deve ser capaz de lidar com situações excepcionais, como pontos inválidos, falta de rota disponível ou erros de processamento, retornando mensagens de erro apropriadas para o cliente.|
-<p align="center">Tabela 4. Requisito funcional</p>
-
-| Identificador (*Rn*) | Requisito não funcional |
-| -   | - |
-| R1  | A API deve ser desenvolvida em Python usando o Framework Django Rest|
-| R2  | API deve receber a solicitação e respondê-la em até 30 segundos|
-| R3  | API deve ser RESTful|
-| R4  | A entrada dos pontos na API devem ser um arquivo JSON|
-| R5  | A entrada dos pontos na API devem conter a latitude e longitudde|
-| R6  | A saída de retorno da API deve ser um arquivo JSON |
-| R7  | Os pontos de retorno do arquivo JSON devem conter a latitude e longitude|
-| R8  | Os pontos de retorno do arquivo JSON devem ser paradas de onibus existentes vida real|
-| R9  | A API deve considerar transito e horários de pico|
-
-<p align="center">Tabela 5. requisito não funcional</p>
-
+Foram apresentados e discutidos alguns requisitos funcionais e não funcionais para serem validados com o cliente. Os requisitos podem ser encontrados nesse [link](https://residenciaticbrisa.github.io/02_RotaOnibus/#/./Requisitos/backlog).
 
 ## 4. Decisões
 
@@ -91,7 +65,7 @@ Foram apresentados e discutidos alguns requisitos funcionais (presentes na tabel
 ## 5. Histórico de Versão
 | Versão | Alteração | Responsável | Revisor | Data  |
 | :----: | :-------: | :---------: | :-----: | :---: | 
-| 1.0    | Criando Ata de Reunião 2  | Natália Martimon | - | 05/07 |
+| 1.0    | Criando Ata de Reunião 2  | Natália Martimon | Leonardo Vitoriano | 05/07 |
 
 
 

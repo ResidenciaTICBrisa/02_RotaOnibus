@@ -1,6 +1,5 @@
 # Requisitos 
 
-<!-- Backlog -->
 ## 1. Elicitação
 
 A partir da técnica de elicitação de requisitos Brainstorming, realizado pelo equipe na [Ata de Reunião 26/06/23](../AtaReuniao/AtaReuniao_2606.md), foi possível identificar os seguintes requisitos funcionais e não funcionais encontradas, respectivamente, nas Tabelas 1 e 2. 
@@ -31,7 +30,7 @@ Requisitos Não Funcionais:
 <p align="center">Tabela 2. Requisitos Não Funcionais</p>
 
 
-## 1. Introdução
+## 2. Backlog
 
 O backlog do produto é a lista de itens (histórias de usuário, bugs, deveres) usados pelo time de software para coordenar o trabalho
 a ser feito. Ele serve como ponte entre a geração e implementação das **histórias de usuário**.
@@ -59,7 +58,7 @@ Alguns dos motivos para utilizar hitórias de usuários são (Cohn, 2004):
 Para complementar a escrita das histórias de usuário são descritos os critérios de aceitação, os quais tem grande importância
 para os desenvolvedores, pois definem pontos que devem ser considerados durante a implementação. 
 
-### 1.1 Épicos
+### 2.1 Épicos
 
 Um épico é uma história de usuário que ainda não foi detalhada, é muito grande ou ainda possui muita incerteza e portanto não pode ser transformada em incremento do produto. O épico deve ser separado em histórias de usuário menores. 
 
