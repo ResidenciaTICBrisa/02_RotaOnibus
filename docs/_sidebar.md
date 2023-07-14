@@ -18,3 +18,4 @@
     - [Open Street Map](./Estudos/OpenStreetMap.md)
     - [OSRM](./Estudos/osrm.md)
     - [ORS](./Estudos/OpenRouteService.md)
+    - [Valhalla](./Estudos/Valhalla.md)
