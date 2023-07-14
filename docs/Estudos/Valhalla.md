@@ -4,7 +4,7 @@ Valhalla é um sistema de roteamento de código aberto desenvolvido pela Mapzen,
 
 O Valhalla possui uma arquitetura modular que permite que você escolha as partes específicas do sistema que deseja utilizar. Ele oferece suporte a diferentes modos de transporte, como carro, bicicleta, a pé e transporte público. Além disso, também possui recursos avançados, como cálculo de rotas com várias paradas, otimização de rotas, roteamento baseado em preferências, entre outros.
 
-Para utilizar os recursos do Valhalla em um aplicação de planejamento de rotas,existem algumas ferramentas que podem auxiliar, são elas:
+Para utilizar os recursos do Valhalla em uma aplicação de planejamento de rotas,existem algumas ferramentas que podem auxiliar, são elas:
 
 1. Valhalla Core: É a biblioteca principal do Valhalla, escrita em C++, que contém os algoritmos de roteamento e os componentes centrais do sistema. Você pode integrar essa biblioteca ao seu aplicativo para realizar os cálculos de rotas.
 
