@@ -17,6 +17,9 @@ O Open Source Routing Machine (OSRM) é um motor de encaminhamento de alto desem
 - O OSRM é uma implementação em C++ de um mecanismo de roteamento para caminhos mais curtos em redes rodoviárias.
 - Está licenciado sob a licença permissiva BSD de 2 cláusulas e é um serviço de rede gratuito.
 - O OSRM suporta as plataformas Linux, FreeBSD, Windows e Mac OS X.
+- Se comunica por API REST.
+- Não possui uma interface gráfica.
+
 
 ### Recursos do OSRM
 
@@ -24,6 +27,9 @@ O Open Source Routing Machine (OSRM) é um motor de encaminhamento de alto desem
 - Suporta vários modos de transporte, como a condução, o ciclismo, a marcha e o encaminhamento de cadeiras de rodas.
 - O OSRM pode ser configurado num servidor para fornecer serviços de encaminhamento para aplicações.
 - Os utilizadores podem consultar os dados de encaminhamento utilizando a API do OSRM.
+
+### Vizualização dos dados do OSM
+- Biblioteca Leaflet.js
 
 ### Instalação do OSRM
 
@@ -73,6 +79,39 @@ duration = result.routes[0].duration
 
 print(f"The distance is {distance} meters and the duration is {duration} seconds.")
 ```
+
+## Conceitos
+
+### Router
+
+É o motor que gera o caminho entre 2 pontos, existem 2 algoitmos de roteamento:
+
+- Algoritmo Multi-Level Djikstra.
+- Algoritmo Contracton Hierarchies.
+
+### Djikstra
+
+- Algoritmo padrão do OSRM.
+- Árvores de expansão.
+- Navega pelos ways até chegar no ponto de interesse.
+- Encontra sempre o menor caminho.
+- Pode gerar caminhos alternativos.
+
+### Contracton Hierarchies
+
+- Gera contrações dos paths entre o ponto de origem e ponto de destino.
+- Melhor para grandes distâncias.
+- Paralelização.
+- Cache dos cálculos.
+- Otimização contínua.
+
+### OpenStreetMap
+
+- Projeto open source de mapeamento colaborativo.
+- Dados de GPS, fotografias aéreas e mapeadores locais.
+- Base disponível para download e uso sem restrições legais.
+
+Disponibiliza os dados por vários meios, o mais comum é o Geofabrik.
 
 ## Histórico de Versão
 
