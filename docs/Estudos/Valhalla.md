@@ -1,4 +1,4 @@
-# O que é o Valhalla
+# 1. O que é o Valhalla
 
 Valhalla é um sistema de roteamento de código aberto desenvolvido pela Mapzen, que permite calcular rotas entre diferentes pontos em um mapa. Ele oferece uma ampla gama de recursos e pode ser utilizado para construir aplicativos de planejamento de rotas personalizados.
 
@@ -13,3 +13,13 @@ Para utilizar os recursos do Valhalla em uma aplicação de planejamento de rota
 3. OpenStreetMap (OSM): O Valhalla utiliza os dados do OSM como base para o cálculo das rotas. Portanto, você precisará importar os dados do OSM relevantes para a região em que deseja utilizar o Valhalla.
 
 4. Mapbox: Embora o Valhalla seja independente do Mapbox, você pode usar a plataforma Mapbox para visualizar e renderizar os resultados do roteamento gerados pelo Valhalla. O Mapbox fornece uma série de bibliotecas e ferramentas para trabalhar com mapas interativos.
+
+## 2. Referências
+
+- [Valhalla Docs](http://valhalla.github.io/valhalla/)
+
+## 3. Histórico de Versão
+
+| Versão | Alteração |  Responsável  | Revisor | Data  |
+| ------ | :-------: | :-----------: | :-----: | :---: |
+|  1.0   | Criação do documento | Luiz Felipe |  Leonardo Vitoriano | 14/07/23 |
