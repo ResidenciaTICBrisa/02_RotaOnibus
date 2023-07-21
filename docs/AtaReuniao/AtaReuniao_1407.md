@@ -41,7 +41,7 @@ O término da sprint definida pelo grupo no dia 04/07/23, com as issues descrita
 | [Issue 10](https://github.com/ResidenciaTICBrisa/02_Rotaônibus/issues/10)  | Estudar sobre o Valhalla e documentá-lo no Pages | Luiz |
 <p align="center">Tabela 2. Issues Sprint 2</p>
 
-Também foi feito um roadmap com as entregas dos próximos meses, que servirá como um guia para as proximas Sprints.
+Também foi feito um [roadmap](./Roadmap) com as entregas dos próximos meses, que servirá como um guia para as proximas Sprints.
 
 
 ## 4. Decisões

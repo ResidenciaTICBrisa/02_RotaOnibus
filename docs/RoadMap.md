@@ -38,31 +38,34 @@
 
 ### Tarefa 1: Estudar sobre a implementação.
 
-### Tarefa 2: Implementar a funcionalidade para receber dois pontos (origem e destino) como entrada.
+- Documentar testes com as ferramentas utilizadas.
+- Calcular diferentes rotas levando em conta tempo de execução (rotas alternativas dependendo do trânsito).
+
+## Entrega 3 (01/09 - 30/09):
+
+### Tarefa 1: Implementar a funcionalidade para receber dois pontos (origem e destino) como entrada.
 
 - Criar uma interface para que o usuário possa fornecer os pontos de origem e destino.
 - Validar e processar as entradas recebidas.
 - Enviar para a API os dois pontos.
 - Recomendação: React
 
-### Tarefa 3: Calcular a rota rodoviária entre os dois pontos usando o Grafo Estático armazenado anteriormente.
+### Tarefa 2: Calcular a rota rodoviária entre os dois pontos usando o Grafo Estático armazenado anteriormente.
 
 - Utilizar algoritmos de busca em grafos oferecidos pelas bibliotecas para encontrar a rota.
 
-### Tarefa 4: Implementar a funcionalidade para retornar a menor rota entre os dois pontos como um arquivo JSON.
+### Tarefa 3: Implementar a funcionalidade para retornar a menor rota entre os dois pontos como um arquivo JSON.
 
 - Criar um endpoint na aplicação para gerar o arquivo JSON com as informações da rota.
 - Testar e validar a geração correta do arquivo JSON.
 
-### Tarefa 5: Plotar o mapa com os dois pontos e a rota calculada.
+### Tarefa 4: Plotar o mapa com os dois pontos e a rota calculada.
 
 - Integrar com uma biblioteca de visualização de mapas (Leaflet por exemplo)
 - Plotar os pontos de origem e destino no mapa.
 - Desenhar a rota encontrada no mapa.
 
-## Entrega 3 (01/09 - 30/09):
-
-### Tarefa 1: Plotar a menor rota no mapa, incluindo os dois pontos e informações adicionais.
+### Tarefa 5: Plotar a menor rota no mapa, incluindo os dois pontos e informações adicionais.
 
 - Aprimorar a visualização do mapa para incluir informações detalhadas da rota.
 - Adicionar dados como distância, tempo estimado e outras informações relevantes.
