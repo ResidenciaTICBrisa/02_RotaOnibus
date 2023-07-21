@@ -2,7 +2,7 @@
 
 ## 1. Elicitação
 
-A partir da técnica de elicitação de requisitos Brainstorming, realizado pelo equipe na [Ata de Reunião 26/06/23](../AtaReuniao/AtaReuniao_2606.md), foi possível identificar os seguintes requisitos funcionais e não funcionais encontradas, respectivamente, nas Tabelas 1 e 2. 
+A partir da técnica de elicitação de requisitos Brainstorming, realizado pelo equipe na [Ata de Reunião 26/06/23](./AtaReuniao/AtaReuniao_2606.md), foi possível identificar os seguintes requisitos funcionais e não funcionais encontradas, respectivamente, nas Tabelas 1 e 2. 
 
 Requisitos Funcionais:
 
