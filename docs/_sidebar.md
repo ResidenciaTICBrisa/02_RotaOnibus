@@ -24,3 +24,4 @@
     - [RoadMap](./RoadMap.md)
     - [OSRM Benchmark](./Estudos/BenchmarkOSRM.md)
     - [ORS Benchmark](./Estudos/ORS_Benchmark.md)
+    - [OSM Benchmark](.Estudos/OSM_Benchmark.md)
