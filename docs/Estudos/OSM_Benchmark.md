@@ -103,6 +103,8 @@ m
 
 A figura 1 ilustra a rota entre a UnB Gama e o Conjunto Nacional.
 
+![mapa](./assets/Rota_UnbGama-CN.png)
+
 
 ## 6. Conclusão
 
