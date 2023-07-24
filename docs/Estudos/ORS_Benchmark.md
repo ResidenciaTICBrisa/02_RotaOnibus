@@ -74,15 +74,15 @@ A API do OpenRouteService apresentou recursos avançados de otimização de rota
 No caso anterior também é possível adicionar um tempo para cada uma das rotas assim como um tempo de serviço de cada um dos veículos
     
     # Organiza a rota de acordo com o tempo
-    coords = [
-  { 'location': [-47.894583,-15.810909],'service': 1*60*60 },
-  { 'location': [-47.962913,-15.896979],'service': 0.5*60*60 },
-  { 'location': [-47.990700,-15.945459],'service': 0.75*60*60 },
-  { 'location': [-48.047356,-15.989687],'service': 1*60*60 },
-  { 'location': [-47.874270,-15.775838],'service': 0.25*60*60 },
-  { 'location': [-47.866248,-15.770699],'service': 0.3*60*60 },
-  { 'location': [-47.869608,-15.757577],'service': 0.2*60*60 },
-  { 'location': [-47.876013,-15.753971],'service': 0.1*60*60 },
+    coords = [ 
+        { 'location': [-47.894583,-15.810909],'service': 1*60*60 },
+        { 'location': [-47.962913,-15.896979],'service': 0.5*60*60 },
+        { 'location': [-47.990700,-15.945459],'service': 0.75*60*60 },
+        { 'location': [-48.047356,-15.989687],'service': 1*60*60 },
+        { 'location': [-47.874270,-15.775838],'service': 0.25*60*60 },
+        { 'location': [-47.866248,-15.770699],'service': 0.3*60*60 },
+        { 'location': [-47.869608,-15.757577],'service': 0.2*60*60 },
+        { 'location': [-47.876013,-15.753971],'service': 0.1*60*60 },
     ]
 
     rodoviaria = [-47.8833709,-15.7934468]
@@ -109,8 +109,8 @@ Em conclusão, a API do OpenRouteService mostrou-se uma ferramenta poderosa para
 
 ## 4. Referências
 
-[Getting Directions in Python with OpenRouteService-py](https://syntaxbytetutorials.com/vehicle-route-optimization-in-python-with-openrouteservice/)
-[VROOM GitHub](https://github.com/VROOM-Project/vroom/blob/master/docs/API.md)
+- [Getting Directions in Python with OpenRouteService-py](https://syntaxbytetutorials.com/vehicle-route-optimization-in-python-with-openrouteservice/)
+- [VROOM GitHub](https://github.com/VROOM-Project/vroom/blob/master/docs/API.md)
 
 ## 5. Histórico de Versão
 
