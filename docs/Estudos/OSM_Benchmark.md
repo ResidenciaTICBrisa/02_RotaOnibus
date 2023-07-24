@@ -28,7 +28,7 @@ Uma descrição mais detalhada delas pode ser encontrada na [documentação](htt
 1. Primeiro, instale as bibliotecas Python necessárias **osmnx** e **networkx**. Você pode instalá-los usando pip:
 
 ```
-pip install osmnx networkx
+pip install osmnx networkx folium
 ```
 
 2. Importe os módulos necessários em seu script Python:
@@ -36,6 +36,7 @@ pip install osmnx networkx
 ```python
 import osmnx as ox
 import networkx as nx
+import folium
 ```
 
 ## 4. Grafo e cálculo da menor rota
