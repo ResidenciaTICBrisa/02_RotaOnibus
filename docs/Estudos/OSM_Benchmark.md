@@ -75,7 +75,7 @@ dest_node = ox.nearest_nodes(graph, dest[1], dest[0])
 
 shortest_path = nx.shortest_path(graph, orig_node, dest_node, weight='length')
 ```
-O tempo para o cálculo da menor rota foi de 2.71 segundos. 
+O tempo para o cálculo da menor rota foi de 2.72 segundos. 
 
         CPU times: user 2.71 s, sys: 3.83 ms, total: 2.72 s
         Wall time: 2.71 s
@@ -109,7 +109,7 @@ A figura 1 ilustra a rota entre a UnB Gama e o Conjunto Nacional.
 
 ## 6. Conclusão
 
-O Open Street Map é fundamental para o cálculo de rotas, pois ele que é a fonte dos dados geográficos, mapeando diferentes elementos, como estradas, edifícios, pontos de referência, rios e pontos de interesse. Porém, ao utilizar a biblioteca **osmnx** para gerar o Grafo de uma região alvo, utilizando 2 pontos dentro do domínio dessa área mapeada, é um processo demorado, tendo em vista que só na geração do Grafo do Distrito Federal demorou mais de 2 minutos.
+O Open Street Map é fundamental para o cálculo de rotas, pois ele que é a fonte dos dados geográficos, mapeando diferentes elementos, como estradas, edifícios, pontos de referência, rios e pontos de interesse. Porém, ao utilizar a biblioteca **osmnx** para gerar o Grafo de uma região alvo, utilizando 2 pontos dentro do domínio dessa área mapeada, é um processo demorado, tendo em vista que só na geração do Grafo do Distrito Federal demorou mais de 2 minutos. Mesmo assim, partindo do príncipio que o Grafo da região almejada já esteja carregado na memória, é possível realizar a menor rota entre os 2 pontos em um pouco mais de 2 segundos, com a biblioteca **networkx**.
 
 ## 7. Referências
 
