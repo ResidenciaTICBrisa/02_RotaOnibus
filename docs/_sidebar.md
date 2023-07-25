@@ -25,3 +25,5 @@
     - [OSRM Benchmark](./Estudos/BenchmarkOSRM.md)
     - [ORS Benchmark](./Estudos/ORS_Benchmark.md)
     - [OSM Benchmark](./Estudos/OSM_Benchmark.md)
+    - [Valhalla] (./Estudos/Valhalla.md)
+    
