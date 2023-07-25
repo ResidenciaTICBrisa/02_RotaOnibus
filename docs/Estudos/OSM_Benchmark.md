@@ -41,7 +41,7 @@ import folium
 
 ## 4. Grafo e cálculo da menor rota
 
-Para que seja possível calcular uma rota entre 2 pontos, faz se necessário saber em qual região eles estão. Pois, a partir do domínio dessa área específica é possível gerar o Grafo da região, em seguida saber os nós vizinhos entre ponto de origem e destino, também conhecida como vizinhança (*neighborhood*). Depois que já se conhece a vizinhança entre os nós, utiliza-se algoritmos de menor distância em Grafos: Dikstra e obtém-se a menor rota entre os 2 pontos definidos.
+Para que seja possível calcular uma rota entre 2 pontos, faz se necessário saber em qual região eles estão. Pois, a partir do domínio dessa área específica é possível gerar o Grafo da região, em seguida saber os nós vizinhos entre ponto de origem e destino, também conhecida como vizinhança (*neighborhood*). Depois que já se conhece a vizinhança entre os nós, utiliza-se algoritmos de menor distância em Grafos: Dijkstra e obtém-se a menor rota entre os 2 pontos definidos.
 
 ### 4.1 Grafo
 
@@ -105,7 +105,7 @@ m
 A figura 1 ilustra a rota entre a UnB Gama e o Conjunto Nacional.
 
 ![mapa](./assets/Rota_UnbGama-CN.png)
-
+<p align="center">Figura 1. Rota entre a UnB Gama e o Conjunto Nacional</p>
 
 ## 6. Conclusão
 
