@@ -4,7 +4,7 @@
 
 A partir da técnica de elicitação de requisitos Brainstorming, realizado pelo equipe na [Ata de Reunião 26/06/23](./AtaReuniao/AtaReuniao_2606.md), foi possível identificar os seguintes requisitos funcionais e não funcionais encontradas, respectivamente, nas Tabelas 1 e 2. 
 
-Requisitos Funcionais:
+### 1.1 Requisitos Funcionais (RF)
 
 | Código | Requisito |
 |   -    |    -      |
@@ -12,13 +12,14 @@ Requisitos Funcionais:
 |   RF2  | A API deve validar as coordenadas dos pontos de entrada |
 |   RF3  | A API deve calcular a menor rota, por rodovias, entre os pontos de entrada |
 |   RF4  | A API deve retornar a menor rota, por rodovias, entre os pontos de entrada |
+|   RF5  | A API deve cadastrar uma nova rota, por rodovias, a partir de uma lista de pontos de ônibus  |
 <p align="center">Tabela 1. Requisitos Funcionais</p>
 
-Requisitos Não Funcionais:
+### 1.2 Requisitos Não Funcionais (RNF)
 
 | Código  | Requisito |
 |   -     |    -      |
-|   RNF1  | A API deve ser desenvolvida em Python usando o Framework Django Rest |
+|   RNF1  | A API deve ser desenvolvida em Python usando o FastAPI |
 |   RNF2  | A API deve ser RESTful |
 |   RNF3  | A API deve possui tempo de resposta de até 20 segundos |
 |   RNF4  | A entrada dos pontos na API devem ser um arquivo JSON |
@@ -64,13 +65,9 @@ Um épico é uma história de usuário que ainda não foi detalhada, é muito gr
 
 ### Épico 01: Serviço de rotas
 
-| História de Usuário  | Eu, como usuário, gostaria de... | Para poder...                         | Prioridade |
-| -----------------|----------------------------------|---------------------------------------|------------|
-| US1 |  Criar uma página                 | Escrever minhas anotações             | M          |
-
-
-## Requisitos Não Funcionais
-
+| História de Usuário  | Eu, como usuário, gostaria de... | Para poder...                         |
+| -----------------|----------------------------------|---------------------------------------|
+| US1 |  Criar uma página                 | Escrever minhas anotações             | 
 
 
 ## Histórico de Versão
