@@ -12,6 +12,7 @@
     - [Estudo Django e Django REST Framework](./Estudos/Django.md)
       - [Django Rest Framework](./Aplicacao/DRF.md)
     - [Estudo Grafos e o Algoritmo de Dijkrstra](./Estudos/Grafos.md)
+
   - **Sprint 2**
 
     - [Ata Reuniao 03/07/23](./AtaReuniao/AtaReuniao_0307.md)
@@ -19,11 +20,13 @@
     - [OSRM](./Estudos/osrm.md)
     - [ORS](./Estudos/OpenRouteService.md)
     - [Valhalla](./Estudos/Valhalla.md)
+
   - **Sprint 3**
+  
     - [Ata Reuniao 14/07/23](./AtaReuniao/AtaReuniao_1407.md)
     - [RoadMap](./RoadMap.md)
     - [OSRM Benchmark](./Estudos/BenchmarkOSRM.md)
     - [ORS Benchmark](./Estudos/ORS_Benchmark.md)
     - [OSM Benchmark](./Estudos/OSM_Benchmark.md)
-    - [Valhalla] (./Estudos/Valhalla.md)
+    - [Valhalla](./Estudos/Valhalla.md)
     
