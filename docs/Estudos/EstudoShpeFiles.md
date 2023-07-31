@@ -64,11 +64,11 @@ O uso do sistema WGS 84 pelo Folium permite que os dados sejam exibidos corretam
 
 ## Referências
 
-Geopandas Documentation. Acessado em https://geopandas.org/.
+Geopandas Documentation. Acessado em https://geopandas.org/. 
 Parâmetros de transformação de coordenadas ArcGIS. Acessado em: 
 https://forest-gis.com/2015/02/parametros-de-transformacao-de-coordenadas-arcmap.html/#:~:text=Para%20realizar%20uma%20transforma%C3%A7%C3%A3o%20de,ao%20n%C3%ADvel%20de%20poucos%20cent%C3%ADmetros.
 
 
-|Nome  | Versão | Data  |
+|Nome  | Descrição | Data  |
 |---------|---------|---------|
-|Luiz Felipe     |   1      | 30/07/2023        |
+|Luiz Felipe     |   Estudo sobre Shapefiles    | 30/07/2023        |
