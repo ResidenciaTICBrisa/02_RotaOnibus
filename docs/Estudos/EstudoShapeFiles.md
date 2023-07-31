@@ -16,7 +16,6 @@ Para o desenvolvimento de serviços de rota, os shapefiles podem ser utilizados 
 
 ## 2. EPSGs e transformações de coordenas
 
-
 Existem diversos sistemas de referência de coordenadas (SRC) que são utilizados para representar posições geoespaciais no globo terrestre ou em regiões específicas. Cada sistema de referência de coordenadas é projetado para atender a diferentes necessidades de precisão, região geográfica e aplicações específicas. Vou fornecer um resumo sobre alguns dos sistemas de referência de coordenadas mais comuns:
 
 ### WGS 84 (EPSG:4326):
