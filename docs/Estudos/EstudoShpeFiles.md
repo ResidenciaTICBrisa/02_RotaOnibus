@@ -1,6 +1,6 @@
 # Arquivos Shapefiles
 
-## O que são arquivos shapefiles?
+## 1. O que são arquivos shapefiles?
 
 Arquivos shapefile, ou .shp, são um formato popular de dados geoespaciais usado em Sistemas de Informações Geográficas (SIG) para representar informações geográficas, como pontos, linhas e polígonos. Esses arquivos são amplamente utilizados para armazenar e compartilhar informações sobre objetos geográficos, como estradas, rios, edifícios, limites administrativos, entre outros.
 
@@ -14,7 +14,7 @@ A estrutura de um shapefile é composta por três arquivos principais com o mesm
 
 Para o desenvolvimento de serviços de rota, os shapefiles podem ser utilizados como fonte de dados para representar as estradas, ruas ou outros elementos da rede de transporte. 
 
-## EPSGs e transformações de coordenas
+## 2. EPSGs e transformações de coordenas
 
 
 Existem diversos sistemas de referência de coordenadas (SRC) que são utilizados para representar posições geoespaciais no globo terrestre ou em regiões específicas. Cada sistema de referência de coordenadas é projetado para atender a diferentes necessidades de precisão, região geográfica e aplicações específicas. Vou fornecer um resumo sobre alguns dos sistemas de referência de coordenadas mais comuns:
@@ -54,7 +54,7 @@ SAD69 (South American Datum 1969):
 * É baseado no WGS 84, mas possui uma rede de pontos de controle fixos para garantir a precisão regional.
 * O código EPSG associado é 4258.
 
-### Folium e plots
+## 3. Folium e plots
 
 O Folium utiliza o sistema de coordenadas geográficas WGS 84 (World Geodetic System 1984) como padrão para plotar dados no mapa. O código EPSG associado ao sistema de coordenadas WGS 84 é 4326.
 
@@ -62,13 +62,14 @@ Ao utilizar o Folium para plotar dados geoespaciais em um mapa, você pode forne
 
 O uso do sistema WGS 84 pelo Folium permite que os dados sejam exibidos corretamente em qualquer região do mundo, possibilitando que você crie mapas interativos com informações precisas e consistentes, independentemente da localização dos seus dados geoespaciais.
 
-## Referências
+## 4. Referências
 
-Geopandas Documentation. Acessado em https://geopandas.org/. 
+Geopandas Documentation. Acessado em: https://geopandas.org/. 
+
 Parâmetros de transformação de coordenadas ArcGIS. Acessado em: 
 https://forest-gis.com/2015/02/parametros-de-transformacao-de-coordenadas-arcmap.html/#:~:text=Para%20realizar%20uma%20transforma%C3%A7%C3%A3o%20de,ao%20n%C3%ADvel%20de%20poucos%20cent%C3%ADmetros.
 
-
+## 5. Histórico de versão 
 |Nome  | Descrição | Data  |
 |---------|---------|---------|
 |Luiz Felipe     |   Estudo sobre Shapefiles    | 30/07/2023        |
