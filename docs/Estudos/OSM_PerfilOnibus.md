@@ -4,9 +4,6 @@
 
 Na documentação do OSMnx, não existe uma separação explícita de perfis tais como existem nos outros motores de busca e roteamento (OSRM e ORS). Porém, no Open Street Map é possível escolher qual o tipo de rede do Grafo será gerado, a partir de uma região definida, ou seja, pode ser criado um Grafo que mapea o Distitro Federal com todas as ruas para pedestre.
 
-
-por exemplo:  ter a   baixar e criar gráficos a partir dos dados do OpenStreetMap com o módulo **osmnx.graph** 
-
 ## 2. Tipos de Rede no OSM
 
 No módulo osmnx.graph é possível baixar e criar grafos a partir dos dados do OpenStreetMap. E nesse módulo que possuí o parâmetro *network_type* (tipo de rede) para criar o Grafo de uma região delimitada.
