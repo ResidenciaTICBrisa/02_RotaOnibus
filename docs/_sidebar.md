@@ -32,6 +32,11 @@
 
   - **Sprint 4**
 
+    - [Ata Reunião 25/07/23]()
     - [Estudos Shapefiles](./Estudos/EstudoShapeFiles.md)
+  
+  - **Sprint 5**
     
+    - [Ata Reuniao 01/08/23](./AtaReuniao/AtaReuniao_0108.md)
+
     
