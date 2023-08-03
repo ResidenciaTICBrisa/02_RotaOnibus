@@ -10,7 +10,28 @@
 |  <img src="https://avatars.githubusercontent.com/u/64107306?v=4" width="100px;" alt="Foto Marcos Vinicius"/>   |     Luiz Felipe      |    luizros    |
 | <img src= "https://avatars.githubusercontent.com/u/42724774?v=4"  width="100px;" alt="Foto Matheus Pimentel"/> |      Natalia Martimon       |  nataliamartimon   |
 
-## Descrição
+## Papéis da Equipe
+
+| Nome |     Papel      |
+| :-----------: | :-------------: |
+| João Leles        |   -   |
+| Leonardo Milomes Vitoriano     |  -  |
+| Lucas Lopes Frazao   |  -   |
+| Luiz Felipe      |    -    |
+| Natalia Martimon |  -   |
+
+## Descrição dos Papéis
+
+| Papel |     Descrição      |
+| :-----------: | :-------------: |
+| Scrum master        |   Responsável por garantir os rituais do Scrum: reuniões diárias, revisões da Sprint, planejamentos da Sprint, e retrospectivas. Também garante que todos na equipe estejam contribuindo no projeto (commits, pull requests).  |
+| Product manager     |  Responsável por detalhar roadmap, garantir que todos os requisitos estejam mapeados para issue, organizar o project da equipe, e marcar reuniões com os stakeholders. |
+| Lider técnico   |  Responsável por estudar antes de todos na equipe, transmitir conhecimento através de tutoriais e treinamentos, e documentar as decisões técnicas.    |
+| Community manager  |    Responsável por garantir que exista comunicação do projeto com o externo (público e stakeholders), organizar o gitpages do projeto.     |
+|  -    |   - |
+
+
+## Descrição do Projeto
 
 Hoje os serviços de rotas de ônibus são fornecidas somente por empresas privadas, com o modelo de negócio Mobility as a Service. Serviços de rotas open source, como o valhalla, possuem serviços de rotas somente para carros, pedestres e bicicletas. O desafio é adaptar as soluções open source já disponíveis de serviço de rota para realizar a rota de ônibus para o usuário final.
 
