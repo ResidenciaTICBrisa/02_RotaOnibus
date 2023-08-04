@@ -25,7 +25,6 @@
   - **Sprint 3 (17/07 - 24/07)**
   
     - [Ata Reuniao 14/07/23](./AtaReuniao/AtaReuniao_1407.md)
-    - [RoadMap](./RoadMap.md)
     - [OSRM Benchmark](./Estudos/BenchmarkOSRM.md)
     - [ORS Benchmark](./Estudos/ORS_Benchmark.md)
     - [OSM Benchmark](./Estudos/OSM_Benchmark.md)
@@ -33,7 +32,7 @@
 
   - **Sprint 4 (24/07 - 31/07)**
 
-    - [Ata Reunião 25/07/23]()
+    - [Ata Reunião 25/07/23](./AtaReuniao/AtaReuniao_2507.md)
     - [Estudos Shapefiles](./Estudos/EstudoShapeFiles.md)
   
   - **Sprint 5 (31/07 - 07/08)**
