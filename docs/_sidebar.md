@@ -1,19 +1,20 @@
 - [Home](/)
-- [Blibliotecas](./ferramentas.md)
-- **Requisitos**
+- **Planejamento**
+  - **Roadmap**
+    - [Cronograma](./EstruturaProjeto/cronograma.md)
 
-  - **1. Backlog do Produto**
-    - [1.Backlog do Produto](./Requisitos/backlog.md)
+  - **Requisitos**
+    - [Backlog](./EstruturaProjeto/backlog.md)
 - **Sprints**
 
-  - **Sprint 1**
+  - **Sprint 1 (03/07 - 10/07)**
 
     - [Ata Reuniao 26/06/23](./AtaReuniao/AtaReuniao_2606.md)
     - [Estudo Django e Django REST Framework](./Estudos/Django.md)
-      - [Django Rest Framework](./Aplicacao/DRF.md)
+      - [Django Rest Framework](./Estudos/DRF.md)
     - [Estudo Grafos e o Algoritmo de Dijkrstra](./Estudos/Grafos.md)
 
-  - **Sprint 2**
+  - **Sprint 2 (10/07 - 17/07)**
 
     - [Ata Reuniao 03/07/23](./AtaReuniao/AtaReuniao_0307.md)
     - [Open Street Map](./Estudos/OpenStreetMap.md)
@@ -21,7 +22,7 @@
     - [ORS](./Estudos/OpenRouteService.md)
     - [Valhalla](./Estudos/Valhalla.md)
 
-  - **Sprint 3**
+  - **Sprint 3 (17/07 - 24/07)**
   
     - [Ata Reuniao 14/07/23](./AtaReuniao/AtaReuniao_1407.md)
     - [RoadMap](./RoadMap.md)
@@ -30,12 +31,12 @@
     - [OSM Benchmark](./Estudos/OSM_Benchmark.md)
     - [Valhalla](./Estudos/Valhalla.md)
 
-  - **Sprint 4**
+  - **Sprint 4 (24/07 - 31/07)**
 
     - [Ata Reunião 25/07/23]()
     - [Estudos Shapefiles](./Estudos/EstudoShapeFiles.md)
   
-  - **Sprint 5**
+  - **Sprint 5 (31/07 - 07/08)**
     
     - [Ata Reuniao 01/08/23](./AtaReuniao/AtaReuniao_0108.md)
 
