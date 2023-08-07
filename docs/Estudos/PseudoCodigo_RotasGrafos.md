@@ -15,8 +15,11 @@ Já o arquivo Shapefile das linhas, após ser lido e transformado em um GeoDataF
 <p align="center">Figura 2. DataFrame Linhas</p>
 
 
-Todo o tratamento das paradas e linhas de ônibus pode ser encontrada nesse [notebook](https://github.com/ResidenciaTICBrisa/02_RotaOnibus/blob/main/docs/Notebooks/testeParadasLinhasLuiz.ipynb).
+Todo o tratamento das paradas e linhas de ônibus pode ser encontrada nesse [notebook](https://github.com/ResidenciaTICBrisa/02_RotaOnibus/blob/main/docs/Notebooks/testeParadas.ipynb).
 
+Em resumo, o notebook(https://github.com/ResidenciaTICBrisa/02_RotaOnibus/blob/main/docs/Notebooks/testeParadas.ipynb)) trabalha com dados de uma linha específica e pontos de parada de ônibus. O scrip principal tem como objetivo, iterar sobre os POINTS de parada de ônibus presentes no shapefile das paradas, calculando a distância entre cada ponto e a linestring de uma linha de ônibus. Se a distância for menor do que um valor específico, o ponto de parada é considerado próximo o suficiente e é registrado. Um novo conjunto de dados é criado com os pontos de parada próximos identificados.
+
+Usando a biblioteca de mapeamento folium, o código cria um mapa interativo e adiciona marcadores para cada ponto de parada próximo. Cada marcador exibe informações sobre a parada quando clicado. Por fim, o mapa é salvo como um arquivo HTML.
 
 ## Estrutura do Grafo
 
