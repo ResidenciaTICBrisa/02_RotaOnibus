@@ -38,5 +38,6 @@
   - **Sprint 5 (31/07 - 07/08)**
     
     - [Ata Reuniao 01/08/23](./AtaReuniao/AtaReuniao_0108.md)
+    - [Criando e salvando grafo do mapa](./Estudos/criacaoSalvamentoGrafoLucas.md)
 
     
