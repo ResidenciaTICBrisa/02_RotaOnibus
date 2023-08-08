@@ -39,5 +39,6 @@
     
     - [Ata Reuniao 01/08/23](./AtaReuniao/AtaReuniao_0108.md)
     - [Criando e salvando grafo do mapa](./Estudos/criacaoSalvamentoGrafoLucas.md)
+    - [Pseudoalgoritmo Rotas em Grafo](./Estudos/PseudoCodigo_RotasGrafos.md)
 
     
