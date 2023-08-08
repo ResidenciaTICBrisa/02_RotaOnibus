@@ -14,7 +14,6 @@ Já o arquivo Shapefile das linhas, após ser lido e transformado em um GeoDataF
 ![DataFrame Linhas](./assets/dataFrameLinhas.png)
 <p align="center">Figura 2. DataFrame Linhas</p>
 
-
 Todo o tratamento das paradas e linhas de ônibus pode ser encontrada nesse [notebook](https://github.com/ResidenciaTICBrisa/02_RotaOnibus/blob/main/docs/Notebooks/testeParadas.ipynb).
 
 Em resumo, o [notebook](https://github.com/ResidenciaTICBrisa/02_RotaOnibus/blob/main/docs/Notebooks/testeParadas.ipynb) trabalha com dados de uma linha específica e pontos de parada de ônibus. O scrip principal tem como objetivo, iterar sobre os POINTS de parada de ônibus presentes no shapefile das paradas, calculando a distância entre cada ponto e a linestring de uma linha de ônibus. Se a distância for menor do que um valor específico, o ponto de parada é considerado próximo o suficiente e é registrado. Um novo conjunto de dados é criado com os pontos de parada próximos identificados.
@@ -23,12 +22,63 @@ Usando a biblioteca de mapeamento folium, o código cria um mapa interativo e ad
 
 ## Estrutura do Grafo
 
-<!-- Após o tratamento das paradas e linhas de ônibus, foi gerada um Data Frame que contém todas as paradas de u
+Após essa primeira etapa de tratamento dos dados, foi gerado um arquivo CSV que contém todas as paradas de uma linha de ônibus. Então, com esse Data Frame em mãos, foi pensado na construção do Grafo com o Pseudocódigo a seguir:
+
+<!-- DECLARE grafoGeral {O grafo tem que ser Direcional} -->
+<!-- DECLARE subGrafo -->
+
+<!-- proxParada <- parada + 1 % tamanhoDF { Ca} -->
+
+<!-- tamanhoLineString <- Quantidade de linhas do linestring -->
+
+        LEIA(DataFrameRotas)
+        DataFramaParadas <- CRIE DataFrame da coluna 'geometry' presente em DataFrameRotas
+        grafoRotas <- CHAME método que cria Grafo Direcional vazio  
+
+        PARA cada parada no DataFramaParadas FACA
+            SE parada NÃO está no grafoRotas ENTÃO 
+                CHAME método que adiciona a parada como um Nó do grafoRotas 
+            FIM SE
+        FIM PARA
+
+            CHAME método que junta o grafoSubRota ao grafoRotas
+
+<!-- LEIA(DataFrameRotas)
+DataFramaParadas <- CRIE DataFrame da coluna 'geometry' presente em DataFrameRotas
+grafoRotas <- CHAME método que cria Grafo Direcional vazio  
+
+PARA cada linha no DataFrameRotas FAÇA
+
+    linestring <- ACESSE paradas de uma rota de ônibus da linha
+    grafoSubRota <- CHAME método que cria Grafo Direcional vazio
+
+    PARA cada parada no linestring FACA
+        CHAME método que adiciona a parada como um Nó do grafoSubRota 
+    FIM PARA
+
+    CHAME método que junta o grafoSubRota ao grafoRotas
+    
+FIM PARA -->
+
+
+
+<!-- df <- Data Frame das paradas e linhas
+Grafo <- Grafo direcional 
+
+para cada linha no df: 
+    linestring <- paradas de uma linha
+
+    para cada parada no linestring:
+
+
+        crie um nó do Grafo -->
+
+
 
 Nó:
 Aresta:
 
-Transformar Paradas -->
+Transformar Paradas
 
 ## Linhas de Onibus em Subgrafos
 
