@@ -24,74 +24,33 @@ Usando a biblioteca de mapeamento folium, o código cria um mapa interativo e ad
 
 Após essa primeira etapa de tratamento dos dados, foi gerado um arquivo CSV que contém todas as paradas de uma linha de ônibus. Então, com esse Data Frame em mãos, foi pensado na construção do Grafo com o Pseudocódigo a seguir:
 
-<!-- DECLARE grafoGeral {O grafo tem que ser Direcional} -->
-<!-- DECLARE subGrafo -->
 
-<!-- proxParada <- parada + 1 % tamanhoDF { Ca} -->
-
-<!-- tamanhoLineString <- Quantidade de linhas do linestring -->
-
-        LEIA(DataFrameRotas)
-        DataFramaParadas <- CRIE DataFrame da coluna 'geometry' presente em DataFrameRotas
-        grafoRotas <- CHAME método que cria Grafo Direcional vazio  
-
-        PARA cada parada no DataFramaParadas FACA
-            SE parada NÃO está no grafoRotas ENTÃO 
-                CHAME método que adiciona a parada como um Nó do grafoRotas 
-            FIM SE
-        FIM PARA
-
-            CHAME método que junta o grafoSubRota ao grafoRotas
-
-<!-- LEIA(DataFrameRotas)
-DataFramaParadas <- CRIE DataFrame da coluna 'geometry' presente em DataFrameRotas
-grafoRotas <- CHAME método que cria Grafo Direcional vazio  
-
-PARA cada linha no DataFrameRotas FAÇA
-
-    linestring <- ACESSE paradas de uma rota de ônibus da linha
-    grafoSubRota <- CHAME método que cria Grafo Direcional vazio
-
-    PARA cada parada no linestring FACA
-        CHAME método que adiciona a parada como um Nó do grafoSubRota 
-    FIM PARA
-
-    CHAME método que junta o grafoSubRota ao grafoRotas
-    
-FIM PARA -->
+        Para cada linha (rota) no DataFrame:
+            Criar um novo Grafo Direcional chamado subgrafo
+        
+            Para cada parada na linha:
+                Adicionar um nó ao subgrafo para representar a parada
+                Armazenar o identificador e coordenada da parada
+                
+            Para cada parada de 1 até o penúltimo nó:
+                Calcular a distância entre a parada atual e a próxima parada
+                Adicionar uma aresta do nó atual para o próximo nó com a distância e o número da linha de ônibus como atributos
+                
+            Calcular a distância entre a última parada e a primeira parada
+            Adicionar uma aresta do último nó para o primeiro nó com a distância como atributo
+            
+            Adicionar o subgrafo ao grafo principal
 
 
+Dessa forma, os nós e arestas do Grafo estariam descritos dessa forma a seguir:
 
-<!-- df <- Data Frame das paradas e linhas
-Grafo <- Grafo direcional 
-
-para cada linha no df: 
-    linestring <- paradas de uma linha
-
-    para cada parada no linestring:
-
-
-        crie um nó do Grafo -->
-
-
-
-Nó:
-Aresta:
-
-Transformar Paradas
-
-## Linhas de Onibus em Subgrafos
-
-
-
-## Junção dos SubGrafos em um único Grafo
-
-
+- Nó : identificador da parada de ônibus, coordenada da parada de ônibus
+- Aresta: número da linha de ônibus e a distancia entre os nós
 
 
 ## Replicar para todo o Brasil
 
-
+O objetivo final seria então, replicar as etapas de tratamento das Paradas e Rotas de ônibus, bem como a contrução do Grafo para todos os estados do Brasil. De tal forma que a última etapa consiste em juntar todos os Grafos de cada estado em apenas um único. A partir disso, a fase de transformar os notebooks em uma API Restful pode ser inicializada.
 
 
 ## Referências
