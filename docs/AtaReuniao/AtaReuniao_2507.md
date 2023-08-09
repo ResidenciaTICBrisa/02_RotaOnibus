@@ -40,4 +40,4 @@
 
 | Versão |       Alteração       | Responsável | Revisor | Data |
 | :-----: | :---------------------: | :-----------: | :-----: | :---: |
-|   1.0   | Criando Ata de Reunião | Lucas Frazão |    -    | 25/07 |
+|   1.0   | Criando Ata de Reunião | Lucas Frazão |    Leonardo Vitoriano    | 25/07 |
