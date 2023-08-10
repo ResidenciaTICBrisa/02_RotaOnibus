@@ -25,6 +25,8 @@
 
 - Integrar nosso projeto com algum opensource de mapas.
 
+## Histórico de versão
+
 | Versão |      Alteração      |              Responsável              |                Revisor                | Data |
 | :-----: | :--------------------: | :------------------------------------: | :------------------------------------: | :---: |
 |   1.0   | Criação do documento | Lucas, Leonardo, João, Luiz, Natália | Lucas, Leonardo, João, Luiz, Natália | 09/08 |
