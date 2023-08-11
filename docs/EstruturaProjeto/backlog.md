@@ -47,7 +47,7 @@ Cohn propõe a forma de estruturar uma US (sua gramática), que é a mais utiliz
 proposta por Cohn descreve pontos fundamentais dos requisitos do usuário, sendo: tipo de usuário; objetivo; e a razão
 do requisito descrito.
 
-Alguns dos motivos para utilizar hitórias de usuários são (Cohn, 2004):
+Alguns dos motivos para utilizar hitórias de usuários são:
 
 - Enfatizam comunicação verbal;
 - São compreensivas para todos;
@@ -67,7 +67,7 @@ Um épico é uma história de usuário que ainda não foi detalhada, é muito gr
 
 | História de Usuário  | Eu, como usuário, gostaria de... | Para poder...                         |
 | -----------------|----------------------------------|---------------------------------------|
-| US1 |  Criar uma página                 | Escrever minhas anotações             | 
+| US1 | -                | -           | 
 
 
 ## Histórico de Versão
