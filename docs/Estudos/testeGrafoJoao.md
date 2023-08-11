@@ -56,7 +56,7 @@ rota = linhas.to_crs("EPSG:4326")
 
 ## Plotando mapa das Rotas
 
-''''''''''''''''
+```python
 # Gera o mapa da região
 mapa = folium.Map(location=list(reversed([-47.976167,-15.922460])), tiles="cartodbpositron", zoom_start = 11)
 
@@ -73,6 +73,14 @@ folium.PolyLine(locations = coord_ida, color = 'green', tooltip = linestringFGA[
 
 #Plotando a volta
 folium.PolyLine(locations = coord_volta, color = 'red', tooltip = linestringFGA['linha'].iloc[0]+ ' ' + linestringFGA['sentido'].iloc[0]).add_to(mapa)
-''''''''''''''''''''''''''''''''
+```
 
 ## Identificando os pontos em comum nos arquivos
+
+## Referência
+
+## Histórico de Versão
+
+| Versão | Alteração | Responsável | Revisor | Data  |
+| :----: | :-------: | :---------: | :-----: | :---: | 
+| 1.0    | Criando arquivo | João Leles | - | 11/08 |
