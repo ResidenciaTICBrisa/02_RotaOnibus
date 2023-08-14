@@ -45,3 +45,4 @@
   - **Sprint 6**
     
     - [Grafos em um único arquivo](./Estudos/Lucas/SalvandoVariosGrafosEstudoLucas.md)
+    - [Salvado paradas de rotas de ônibus em CSV](./Estudos/Paradas.md)
