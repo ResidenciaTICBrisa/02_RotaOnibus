@@ -136,6 +136,7 @@ for key in labels:
 nx.draw_networkx_edge_labels(G, pos, edge_labels=labels)
 plt.show()
 ```
+
 ![](https://i.imgur.com/yWRND3M.png)
 
 ### Salvando grafos em um arquivo
@@ -157,7 +158,7 @@ pos_loaded = nx.get_node_attributes(G_loaded, 'pos')
 nx.draw(G_loaded, pos_loaded, with_labels=True)
 labels_loaded = nx.get_edge_attributes(G_loaded, 'weight')
 for key in labels_loaded:
-    labels_loaded[key] = round(labels_loaded[key], 2) 
+    labels_loaded[key] = round(labels_loaded[key], 2)
 nx.draw_networkx_edge_labels(G_loaded, pos_loaded, edge_labels=labels_loaded)
 plt.show()
 ```
@@ -230,6 +231,7 @@ plt.show()
 with open('grafosJuntos.pkl', 'wb') as f:
     pickle.dump((G1, G2), f)
 ```
+
 ![](https://i.imgur.com/D1I2Cct.png)
 
 ### Usando coordenadas brasileiras
@@ -410,8 +412,15 @@ plotar_grafo_no_mapa(G4, cores[3])
 
 mapa.save('mapa_grafos.html')
 ```
+
 ![](https://i.imgur.com/OadsUGu.png)
 
 ## Conclusão e próximos passos
 
 Agora que sabemos como salvar mais de um grafo em um .pickle e já temos o conhecimento de como transformar as coordenadas em grafos, produzido em [Criando e salvando grafo a partir do mapa](Estudos/Lucas/criacaoSalvamentoGrafoLucas.md), basta juntar esses dois conhecimentos. Os próximos passos são conseguirmos pegar todas as paradas que compõem uma linha e aplicarmos os códigos produzidos em cima de todas as linhas de brasília-DF.
+
+## Histórico de Versão
+
+| Versão |      Alteração       | Responsável  | Revisor | Data  |
+| :----: | :------------------: | :----------: | :-----: | :---: |
+|  1.0   | Criação do documento | Lucas Frazão |    -    | 14/08 |
