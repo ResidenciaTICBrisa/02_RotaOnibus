@@ -67,7 +67,7 @@ Para cada parada de 1 até o penúltimo nó:
 - Adicionar uma aresta do nó atual para o próximo nó com a distância e o número da linha de ônibus como atributos
 
 
-Calcular a distância entre a última parada e a primeira parada
+- Calcular a distância entre a última parada e a primeira parada
 - Adicionar uma aresta do último nó para o primeiro nó com a distância como atributo
 - Adicionar o subgrafo ao grafo principal
 
