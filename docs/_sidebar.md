@@ -5,6 +5,10 @@
 
   - **Requisitos**
     - [Backlog](./EstruturaProjeto/backlog.md)
+
+- **Releases**
+  - [Release 1](./Estudos/release1.md)
+
 - **Sprints**
 
   - **Sprint 1 (03/07 - 10/07)**
