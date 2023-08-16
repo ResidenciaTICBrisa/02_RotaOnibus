@@ -35,9 +35,15 @@ Um dos desafios mais substanciais que enfrentamos até o momento foi essa mudan�
 
 A Secretaria de Transporte e Mobilidade (Semob) do Distrito Federal fornece dados sobre paradas e rotas de ônibus em diversos formatos, sendo o Shapefile o mais relevante para este projeto. Esse formato descreve as paradas com coordenadas (latitude e longitude) e as linhas de ônibus com trajetos completos em forma de LINESTRING.
 
-O arquivo de paradas, ao ser transformado em GeoDataFrame, apresenta as paradas com coordenadas geográficas em POINT. Esse dado é vital para identificar as paradas nas linhas de ônibus.
+O arquivo de paradas, ao ser transformado em GeoDataFrame, apresenta as paradas com coordenadas geográficas em POINT, visualizado na Figura 1. Esse dado é vital para identificar as paradas nas linhas de ônibus.
 
-Já o arquivo de linhas, também transformado em GeoDataFrame, traz trajetos em LINESTRING, representando o percurso completo de cada ônibus. No entanto, a ênfase recai nas paradas, levando a uma simplificação da informação, considerando somente os pontos onde os ônibus param.
+![DataFrame Paradas](./assets/dataFrameParadas.png)
+<p align="center">Figura 1. DataFrame Paradas</p>
+
+Já o arquivo de linhas, também transformado em GeoDataFrame, traz trajetos em LINESTRING, representando o percurso completo de cada ônibus, encontrado na Figura 2. No entanto, a ênfase recai nas paradas, levando a uma simplificação da informação, considerando somente os pontos onde os ônibus param.
+
+![DataFrame Linhas](./assets/dataFrameLinhas.png)
+<p align="center">Figura 2. DataFrame Linhas</p>
 
 O processo é detalhado em um notebook, onde se concentra em uma linha específica e seus pontos de parada. O script principal itera por cada parada, calculando a distância até a linha de ônibus. Se a distância for menor que um limiar, a parada é registrada, resultando em um novo conjunto de dados.
 
@@ -54,16 +60,19 @@ Para cada linha (rota) no DataFrame:
 Para cada parada na linha:
 - Adicionar um nó ao subgrafo para representar a parada
 - Armazenar o identificador e coordenada da parada
-   	 
+
+
 Para cada parada de 1 até o penúltimo nó:
 - Calcular a distância entre a parada atual e a próxima parada
 - Adicionar uma aresta do nó atual para o próximo nó com a distância e o número da linha de ônibus como atributos
-   	 
+
+
 Calcular a distância entre a última parada e a primeira parada
 - Adicionar uma aresta do último nó para o primeiro nó com a distância como atributo
 - Adicionar o subgrafo ao grafo principal
 
-Pensamos que cada rota de ônibus seria um subgrafo direcional, que após ser calculado, seria integrado no Grafo geral, o qual contém todas as rotas de ônibus existentes.
+
+Pensamos que cada rota de ônibus seria um subgrafo direcional, que após ser calculado, seria integrado no Grafo geral, o qual contém todas as linhas de ônibus existentes.
 
 Dessa maneira, o Grafo resultante teria nós representando as paradas de ônibus com seus identificadores e coordenadas, e as arestas indicando o número da linha de ônibus e a distância entre os nós conectados.
 
