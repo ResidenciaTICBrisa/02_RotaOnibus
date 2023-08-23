@@ -17,7 +17,17 @@ Dificuldade: Grande
 
 ## Documentação 
 
-### Tecnologia
+A documentação e **wiki** do projeto Otimização de rotas de Ônibus, bem como todos os artefatos desenvolvidos, encontra-se no link a seguir:
+
+- [Wiki do projeto](https://residenciaticbrisa.github.io/02_RotaOnibus/)
+
+## Notebooks
+
+Os notebooks elaborados ao longo do projeto podem ser visualizados no link a seguir:
+
+- [Notebooks][https://github.com/ResidenciaTICBrisa/02_RotaOnibus/tree/main/docs/Notebooks]
+
+<!-- ### Tecnologia
 
 A geração do site estático é realizada utilizando o [docsify](https://docsify.js.org/).
 
@@ -39,4 +49,4 @@ Para iniciar o site localmente, utilize o comando:
 
 ```shell
 docsify serve ./docs
-```
+``` -->
