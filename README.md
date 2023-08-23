@@ -25,7 +25,7 @@ A documentação e **wiki** do projeto Otimização de rotas de Ônibus, bem com
 
 Os notebooks elaborados ao longo do projeto podem ser visualizados no link a seguir:
 
-- [Notebooks][https://github.com/ResidenciaTICBrisa/02_RotaOnibus/tree/main/docs/Notebooks]
+- [Notebooks](https://github.com/ResidenciaTICBrisa/02_RotaOnibus/tree/main/docs/Notebooks)
 
 <!-- ### Tecnologia
 
