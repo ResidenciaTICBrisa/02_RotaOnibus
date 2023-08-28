@@ -1,5 +1,27 @@
 # Otimização de rotas de Ônibus
 
+## Descrição do Projeto
+
+Hoje os serviços de rotas de ônibus são fornecidas somente por empresas privadas, com o modelo de negócio Mobility as a Service. Serviços de rotas open source, como o valhalla, possuem serviços de rotas somente para carros, pedestres e bicicletas. O desafio é adaptar as soluções open source já disponíveis de serviço de rota para realizar a rota de ônibus para o usuário final.
+
+## Resultados esperados
+
+Protótipo de um serviço de rotas de ônibus em software livre
+
+Habilidades necessárias/preferenciais: conhecimento de algoritmos de grafo, distância mínima entre dois nós, programação python
+
+Mentores: Rodrigo, Inova
+
+Tamanho do projeto: Médio/Grande
+
+Dificuldade: Grande
+
+## Notebooks
+
+Os notebooks elaborados ao longo do projeto podem ser visualizados no link a seguir:
+
+- [Notebooks](https://github.com/ResidenciaTICBrisa/02_RotaOnibus/tree/main/docs/Notebooks)
+
 ## Equipe de Desenvolvimento
 
 |                                                        Foto                                                        |       Desenvolvedor       |      Github      |
@@ -29,19 +51,3 @@
 |  Lider técnico  |                                      Responsável por estudar antes de todos na equipe, transmitir conhecimento através de tutoriais e treinamentos, e documentar as decisões técnicas.                                      |
 |  Equipe técnica  |                                                                   Auxiliar a equipe com o conhecimento, organização do projeto, assistênte geral da equipe.                                                                   |
 | Community manager |                                             Responsável por garantir que exista comunicação do projeto com o externo (público e stakeholders), organizar o gitpages do projeto.                                             |
-
-## Descrição do Projeto
-
-Hoje os serviços de rotas de ônibus são fornecidas somente por empresas privadas, com o modelo de negócio Mobility as a Service. Serviços de rotas open source, como o valhalla, possuem serviços de rotas somente para carros, pedestres e bicicletas. O desafio é adaptar as soluções open source já disponíveis de serviço de rota para realizar a rota de ônibus para o usuário final.
-
-## Resultados esperados
-
-Protótipo de um serviço de rotas de ônibus em software livre
-
-Habilidades necessárias/preferenciais: conhecimento de algoritmos de grafo, distância mínima entre dois nós, programação python
-
-Mentores: Rodrigo, Inova
-
-Tamanho do projeto: Médio/Grande
-
-Dificuldade: Grande
