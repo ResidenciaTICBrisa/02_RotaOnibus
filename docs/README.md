@@ -26,7 +26,7 @@ Os notebooks elaborados ao longo do projeto podem ser visualizados no link a seg
 
 |                                                        Foto                                                        |       Desenvolvedor       |      Github      |
 | :----------------------------------------------------------------------------------------------------------------: | :------------------------: | :--------------: |
-| <img src="https://avatars.githubusercontent.com/u/124414056?v=4" width="100px;" alt="Foto Adne Moretti"/><br> |        João Leles        |   Jrxpinheiro   |
+| <img src="https://avatars.githubusercontent.com/u/124414056?v=4" width="100px;" alt="Foto Adne Moretti"/><br> |        João Leles        |   joao-artl   |
 | <img src="https://avatars.githubusercontent.com/u/80769421?v=4" width="100px;" alt="Foto Leonardo Vitoriano"/> | Leonardo Milomes Vitoriano |  leonardomilv3  |
 |   <img src="https://avatars.githubusercontent.com/u/89523373?v=4" width="100px;" alt="Foto Letícia Aires"/>   |     Lucas Lopes Frazao     | LucasLopesFrazao |
 |  <img src="https://avatars.githubusercontent.com/u/64107306?v=4" width="100px;" alt="Foto Marcos Vinicius"/>  |        Luiz Felipe        |     luizros     |
