@@ -48,8 +48,6 @@ async def get_coordinates(coordinates: Coordinates):
         {'nome': 'Parada 4', 'coordenadas': [42.878113, -88.629799]},
         {'nome': 'Parada 5', 'coordenadas': [43.878113, -89.629799]},
         {'nome': 'Parada 6', 'coordenadas': [44.878113, -90.629799]},
-
-        # Adicione mais paradas conforme necessário
     ]
 
     return {'origin': [coordinates.lat_origin, coordinates.lon_origin],
