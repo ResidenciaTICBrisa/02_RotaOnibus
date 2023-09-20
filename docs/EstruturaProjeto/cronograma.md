@@ -8,7 +8,8 @@
 
 ## Entrega 2 (01/09 - 30/09)
 
-- Aplicar o algoritmo em todo o Distrito Federal (DF). (01/09 08/09)
+- Aplicar o algoritmo em todo o Distrito Federal (DF). (01/09 - 08/09)
+- Preparação dos dados, retirar ruído e criação do csv limpo. (04/09 - 25/09)
 - Criação do algoritmo da melhor rota em cima do arquivo .grafo. (01/09 - 15/09)
 - Criar nossa API que utilizará o algoritmo feito anteriormente. (01/09 - 27/09)
   - Implementar o sistema de receber dois pontos. (16/09 - 27/09)
@@ -18,9 +19,10 @@
 
 ## Entrega 3 (01/10 - 31/10)
 
-- Realizar o pré processamento no Brasil inteiro e aplicar o algoritmo. (01/10 - 20/10)
-- Adicionar na nossa API os novos dados. (20/10 - 27/10)
-- Teste da API. (27/10 - 31/10)
+- Construir o grafo a partir do novo CSV. (01/10 - 16/10)
+- Integrar algoritmo de baldeação na API. (01/10 - 16/10) 
+- Acrescentar novas alternativas de linhas de ônibus que o usuário pode utilizar. (16/10 - 31/10)
+  
 
 ## Entrega 4 (01/11 - 27/11)
 
@@ -33,3 +35,4 @@
 | :----: | :------------------: | :----------------------------------: | :----------------------------------: | :---: |
 |  1.0   | Criação do documento | Lucas, Leonardo, João, Luiz, Natália | Lucas, Leonardo, João, Luiz, Natália | 09/08 |
 |  2.0   |     Novas datas      | Lucas, Leonardo, João, Luiz, Natália | Lucas, Leonardo, João, Luiz, Natália | 15/08 |
+|  3.0   |Atualização das entregas| Lucas, Leonardo, João, Luiz, Natália | Lucas, Leonardo, João, Luiz, Natália | 20/09 |
