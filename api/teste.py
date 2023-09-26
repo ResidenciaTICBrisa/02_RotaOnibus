@@ -5,8 +5,8 @@ import folium
 API_URL = "http://127.0.0.1:8000/calculate_route"
 
 # Coordenadas de origem (Você pode alterá-las conforme necessário)
-lat_origin = -15.819223
-lon_origin = -47.874458 
+lat_origin = -15.998180
+lon_origin = -48.055908
 
 # Fazendo a requisição para a API
 response = requests.post(
@@ -24,7 +24,7 @@ if response.status_code == 200:
     folium.PolyLine(route_coords, color="blue", weight=2.5).add_to(m)
 
     # Salva o mapa em um arquivo HTML e abre no navegador
-    m.save("./route_map.html")
+    m.save("./nosso_route_map.html")
     print("Mapa salvo como 'route_map.html'. Abra este arquivo em um navegador para ver a rota.")
 else:
     print(f"Erro ao chamar a API: {response.text}")

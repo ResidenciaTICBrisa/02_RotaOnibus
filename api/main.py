@@ -8,20 +8,16 @@ import math
 app = FastAPI()
 
 # Definição do modelo Pydantic para entrada
-
-
 class Coordinates(BaseModel):
     lat_origin: float
     lon_origin: float
 
 
 # Carregando o grafo das paradas de ônibus
-with open('bus_stops_graph.pkl', 'rb') as f:
+with open('grafoDirecional.grafo', 'rb') as f:
     bus_stops_graph = pickle.load(f)
 
 # Função para calcular a distância haversine
-
-
 def haversine(coord1, coord2):
     lat1, lon1 = coord1
     lat2, lon2 = coord2
@@ -37,22 +33,18 @@ def haversine(coord1, coord2):
     return meters
 
 # Função para encontrar a parada de ônibus mais próxima
-
-
 def find_nearest_stop(coord, graph):
     nearest_stop = None
     nearest_distance = float('inf')
     for node, attributes in graph.nodes(data=True):
-        stop_coord = (attributes['lat'], attributes['lon'])
+        stop_coord = (attributes['coords'].y, attributes['coords'].x)
         distance = haversine(coord, stop_coord)
         if distance < nearest_distance:
             nearest_distance = distance
             nearest_stop = node
-    return graph.nodes[nearest_stop]['lat'], graph.nodes[nearest_stop]['lon']
+    return graph.nodes[nearest_stop]['coords'].y, graph.nodes[nearest_stop]['coords'].x
 
 # Função para calcular e desenhar a rota de caminhada
-
-
 def calculate_route(start_point, end_point, graph):
     nearest_start = ox.distance.nearest_nodes(
         graph, X=[start_point[1]], Y=[start_point[0]])[0]
