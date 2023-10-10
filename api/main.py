@@ -4,6 +4,7 @@ import osmnx as ox
 import networkx as nx
 import pickle
 from typing import List
+import roteamento as rt
 
 app = FastAPI()
 
@@ -51,6 +52,23 @@ async def get_route(data: InputData):
 
     # Baixar o mapa da área de interesse para cálculo da rota de caminhada
     G = ox.graph_from_point(start_point, dist=2000, network_type='walk')
+
+    ## --------------------------------------------------------------------
+    # Mapear start_point e end_point para os nós no Grafo
+    ## Ler o grafo de um arquivo usando pickle
+    # with open('grafoDirecional.grafo', 'rb') as f:
+    #     G_Direcional = pickle.load(f)
+
+    # raio = 0.007  # Raio desejado em metros 
+
+    # nos_origem = rt.calculaNosProximos(G_Direcional, start_point[1], start_point[0], raio)
+    # no_destino = rt.calculaNoProximo(G_Direcional, end_point[1], end_point[0])
+
+    # paradas, linhas_usadas = rt.calculaRotaOtima(G_Direcional, nos_origem, no_destino, raio)
+
+    # paradas_info_json = rt.paradasELinhasToJson(G_Direcional, paradas, linhas_usadas)
+
+    ## ----------------------------------------------------------------------
 
     # Calcular a rota de baldeação
     baldeacao_coords = calculate_route(start_point, end_point, G)
