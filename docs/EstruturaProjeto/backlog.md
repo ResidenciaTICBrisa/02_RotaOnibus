@@ -8,10 +8,10 @@ A partir da técnica de elicitação de requisitos Brainstorming, realizado pelo
 
 | Código | Requisito |
 |   -    |    -      |
-|   RF1  | A API deve receber as coordenadas do ponto partida e do ponto chegada |
-|   RF2  | A API deve validar as coordenadas dos pontos de entrada |
-|   RF3  | A API deve calcular a menor rota, por rodovias, entre os pontos de entrada |
-|   RF4  | A API deve retornar a menor rota, por rodovias, entre os pontos de entrada |
+|   RF1  | A API deve receber as coordenadas do ponto origem e do ponto destino |
+|   RF2  | A API deve validar as coordenadas dos pontos de origem e destino |
+|   RF3  | A API deve calcular a rota ótima, rota com menor quantidade de ônibus entre a origem e destino. |
+|   RF4  | A API deve retornar a rota ótima, com as linhas de ônibus e paradas, entre a entre a origem e destino. |
 |   RF5  | A API deve cadastrar uma nova rota, por rodovias, a partir de uma lista de pontos de ônibus  |
 <p align="center">Tabela 1. Requisitos Funcionais</p>
 
@@ -65,13 +65,23 @@ Um épico é uma história de usuário que ainda não foi detalhada, é muito gr
 
 ### Épico 01: Serviço de rotas
 
-| História de Usuário  | Eu, como usuário, gostaria de... | Para poder...                         |
-| -----------------|----------------------------------|---------------------------------------|
-| US1 | -                | -           | 
+| Rastreabilidade | História de Usuário  | Eu, como usuário, gostaria de... | Para poder...                         |
+| --------- | -------------------- |----------------------------------|---------------------------------------|
+| RF1       | US1                  | Enviar as coordenadas de origem e destino  | Saber a rota otima e qual(is) ônibus pegar |
+| RF2       | US2                  | Validar das coordenadas de origem e destino  | Identificar se as coordenadas estão dentro do domínio do sistema |
+| RF4       | US4                  | Receber a rota ótima, entre a origem e destino.  | Econimizar dinheiro e tempo |
 
+
+## 3. MVP 
+
+O MVP (Minimum Viable Product), Mínimo Produto Viável, definio juntamente com o cliente, são os seguintes Requisitos Funcionais e Não Funcionais:
+
+- Requisitos Funcionais: RF1, RF2, RF3 e RF4.
+- Requisitos Funcionais: RNF1, RNF2, RNF3, RNF4, RNF5, RNF6, RNF7 e RNF8.
 
 ## Histórico de Versão
 
 | Versão | Alteração |  Responsável  | Revisor | Data  |
 | ------ | :-------: | :-----------: | :-----: | :---: |
 |  1.0   | Criando da introdução e estrutura épicos | Leonardo Vitoriano |  -   | 21/06/23 |
+|  1.1   | Definição MVP | Leonardo Vitoriano |  -   | 11/10/23 |
