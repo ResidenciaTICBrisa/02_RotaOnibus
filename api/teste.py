@@ -5,8 +5,11 @@ import folium
 API_URL = "http://127.0.0.1:8000/calculate_route"
 
 # Coordenadas de origem (Você pode alterá-las conforme necessário)
-lat_origin = -15.989377
-lon_origin = -48.044908
+lat_origin = -15.962060
+lon_origin = -48.023865
+
+lat_destiny = -15.987927
+lon_destiny = -48.044675
 
 # Definindo as paradas no body da requisição
 body = {
@@ -14,10 +17,10 @@ body = {
         "lat": lat_origin,
         "lon": lon_origin
     },
-    "paradas": [
-        {"lat": -15.987927, "lon": -48.044693},
-        {"lat": -15.842100, "lon": -48.045521}
-    ]
+    "destiny_location": {
+        "lat": lat_destiny,
+        "lon": lon_destiny
+    },
 }
 
 # Fazendo a requisição para a API
