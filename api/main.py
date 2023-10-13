@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import osmnx as ox
 import networkx as nx
 import pickle
+import roteamento as rt
 
 app = FastAPI()
 
@@ -36,169 +37,42 @@ async def root():
 
 @app.post('/calculate_route', tags=['Route'], summary='Calcula as rotas de baldeação e veicular')
 async def get_route(data: InputData):
-    all_stops = [
-    {
-        "id_stop": 7907,
-        "lat": -15.963291999999997,
-        "lon": -48.022833000000006,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 7908,
-        "lat": -15.959593999999997,
-        "lon": -48.026028,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 6350,
-        "lat": -15.95956741758501,
-        "lon": -48.02601882854514,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 3809,
-        "lat": -15.956576488628638,
-        "lon": -48.02855193528977,
-        "linha": "0.255"
-    },
-    {
-        "id_stop": 3810,
-        "lat": -15.953939223131423,
-        "lon": -48.030795914341546,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 6354,
-        "lat": -15.95117649533479,
-        "lon": -48.03315367341592,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 7909,
-        "lat": -15.948016999999997,
-        "lon": -48.03582800000001,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 3811,
-        "lat": -15.9480060886309,
-        "lon": -48.03584505006028,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 7910,
-        "lat": -15.943535999999998,
-        "lon": -48.039344,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 3813,
-        "lat": -15.938393849213748,
-        "lon": -48.04209305412461,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 7911,
-        "lat": -15.938388999999995,
-        "lon": -48.042086,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 7912,
-        "lat": -15.933691999999997,
-        "lon": -48.0437,
-        "linha": "0.255"
-    },
-    {
-        "id_stop": 3814,
-        "lat": -15.9336829394337,
-        "lon": -48.043679856954,
-        "linha": "0.255"
-    },
-    {
-        "id_stop": 7913,
-        "lat": -15.925732999999996,
-        "lon": -48.046239,
-        "linha": "0.255"
-    },
-    {
-        "id_stop": 3816,
-        "lat": -15.920460708461938,
-        "lon": -48.04791146325488,
-        "linha": "0.255"
-    },
-    {
-        "id_stop": 7914,
-        "lat": -15.920452999999997,
-        "lon": -48.047928,
-        "linha": "0.255"
-    },
-    {
-        "id_stop": 7915,
-        "lat": -15.917502999999998,
-        "lon": -48.048872,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 3817,
-        "lat": -15.917478165997663,
-        "lon": -48.048870808929316,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 7917,
-        "lat": -15.908972,
-        "lon": -48.051611,
-        "linha": "0.255"
-    },
-    {
-        "id_stop": 7922,
-        "lat": -15.891674999999996,
-        "lon": -48.057164,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 7923,
-        "lat": -15.891674999999996,
-        "lon": -48.057164,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 5391,
-        "lat": -15.874655767236849,
-        "lon": -48.0394544647222,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 4975,
-        "lat": -15.872196498773105,
-        "lon": -48.02948710262496,
-        "linha": "0.205"
-    },
-    {
-        "id_stop": 4976,
-        "lat": -15.867699286908332,
-        "lon": -48.031872129100485,
-        "linha": "0.205"
-    }
-]
+  
+    # 1. Rota de Baldeação (Caminhada) até Origem
+    ## --------------------------------------------------------------------
 
-    # 1. Rota de Baldeação (Caminhada)
     start_point = (data.current_location.lat, data.current_location.lon)
+    dest_point = (data.destiny_location.lat, data.destiny_location.lon)
 
-    first_stop = all_stops[0]
+    # Mapear origem e destino para os nós no Grafo das Linhas e Paradas
+    ## Ler o grafo de um arquivo usando pickle
+    with open('grafoDirecional.grafo', 'rb') as f:
+        G_Direcional = pickle.load(f)
+
+    raioAteOrigem = 0.007  # Raio desejado em metros 
+    raioAteDestino = 0.500 
+
+    nos_origem = rt.calculaNosProximos(G_Direcional, start_point[1], start_point[0], raioAteOrigem)
+    no_destino = rt.calculaNoProximo(G_Direcional, dest_point[1], dest_point[0])
+
+    paradas, linhas_usadas = rt.calculaRotaOtima(G_Direcional, nos_origem, no_destino, raioAteDestino)
+    paradas_info_json = rt.paradasELinhasToJson(G_Direcional, paradas, linhas_usadas)
+
+    first_stop = paradas_info_json[0]
     end_point = (first_stop["lat"], first_stop["lon"])
 
     # Baixar o mapa da área de interesse para cálculo da rota de caminhada
     G = ox.graph_from_point(start_point, dist=2000, network_type='walk')
 
     # Calcular a rota de baldeação
-    baldeacao_coords = calculate_route(start_point, end_point, G)
+    baldeacao_coords_orig = calculate_route(start_point, end_point, G)
 
     # 2. Rota Veicular
+    ## --------------------------------------------------------------------
+    
     G_DF = ox.load_graphml("drive_true_distrito_federal.graphml")
 
-    nearest_nodes = [ox.distance.nearest_nodes(G_DF, stop["lon"], stop["lat"]) for stop in all_stops]
+    nearest_nodes = [ox.distance.nearest_nodes(G_DF, stop["lon"], stop["lat"]) for stop in paradas_info_json]
 
     all_routes = []
     for i in range(len(nearest_nodes) - 1):
@@ -209,8 +83,22 @@ async def get_route(data: InputData):
 
     veicular_coords = [(G_DF.nodes[node]['y'], G_DF.nodes[node]['x'])
                        for node in all_routes]
+    
+
+    # 3. Rota de Baldeação (Caminhada) até Destino
+    ## -------------------------------------------------------------------- 
+
+    last_stop = paradas_info_json[len(paradas_info_json)-1]
+    start_point = (last_stop["lat"], last_stop["lon"])
+
+    # Baixar o mapa da área de interesse para cálculo da rota de caminhada
+    G = ox.graph_from_point(start_point, dist=2000, network_type='walk')
+
+    # Calcular a rota de baldeação
+    baldeacao_coords_dest = calculate_route(start_point, dest_point, G)
 
     return {
-        "baldeacao": baldeacao_coords,
-        "rota_veicular": veicular_coords
+        "baldeacao_orig": baldeacao_coords_orig,
+        "rota_veicular": veicular_coords,
+        "baldeacao_dest": baldeacao_coords_dest
     }

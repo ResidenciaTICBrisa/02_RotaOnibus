@@ -85,6 +85,13 @@ def paradasELinhasToJson(G, paradas, linhas_usadas):
     paradas_info = []
     linhas_usadas = linhas_usadas[1:]
 
+    parada_info = {
+        "id_stop": int(paradas[0]),
+        "lat": float(G.nodes[paradas[0]]['coords'].y),
+        "lon": float(G.nodes[paradas[0]]['coords'].x),
+    }
+    paradas_info.append(parada_info)
+
     # Itera sobre as paradas e linhas para criar o dicionário
     for i, parada in enumerate(paradas[1:]):
         parada_info = {

@@ -5,11 +5,11 @@ import folium
 API_URL = "http://127.0.0.1:8000/calculate_route"
 
 # Coordenadas de origem (Você pode alterá-las conforme necessário)
-lat_origin = -15.962060
-lon_origin = -48.023865
+lat_origin = -15.989444964529529
+lon_origin = -48.044418962814866
 
-lat_destiny = -15.987927
-lon_destiny = -48.044675
+lat_destiny = -15.864892647091217
+lon_destiny = -48.030234362882624
 
 # Definindo as paradas no body da requisição
 body = {
@@ -31,15 +31,17 @@ if response.status_code == 200:
     data = response.json()
 
     # Coordenadas para baldeação e rota veicular
-    baldeacao_coords = data['baldeacao']
+    baldeacao_coords_orig = data['baldeacao_orig']
     rota_veicular_coords = data['rota_veicular']
+    baldeacao_coords_dest = data['baldeacao_dest']
 
     # Criando o mapa com folium centrado na origem
     m = folium.Map(location=[lat_origin, lon_origin], zoom_start=15)
 
     # Adicionando os caminhos no mapa
-    folium.PolyLine(baldeacao_coords, color="red", weight=2.5).add_to(m)  # Baldeação em vermelho
+    folium.PolyLine(baldeacao_coords_orig, color="red", weight=2.5).add_to(m)  # Baldeação em vermelho
     folium.PolyLine(rota_veicular_coords, color="blue", weight=2.5).add_to(m)  # Rota veicular em azul
+    folium.PolyLine(baldeacao_coords_dest, color="green", weight=2.5).add_to(m)  # Baldeação em vermelho
 
     # Salva o mapa em um arquivo HTML e abre no navegador
     m.save("./nosso_route_map.html")
