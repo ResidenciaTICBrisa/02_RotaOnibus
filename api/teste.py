@@ -41,7 +41,7 @@ if response.status_code == 200:
     # Adicionando os caminhos no mapa
     folium.PolyLine(baldeacao_coords_orig, color="red", weight=2.5).add_to(m)  # Baldeação em vermelho
     folium.PolyLine(rota_veicular_coords, color="blue", weight=2.5).add_to(m)  # Rota veicular em azul
-    folium.PolyLine(baldeacao_coords_dest, color="green", weight=2.5).add_to(m)  # Baldeação em vermelho
+    folium.PolyLine(baldeacao_coords_dest, color="green", weight=2.5).add_to(m)  # Baldeação em verde
 
     # Salva o mapa em um arquivo HTML e abre no navegador
     m.save("./nosso_route_map.html")

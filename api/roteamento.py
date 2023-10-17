@@ -11,7 +11,7 @@ RAIO_PARADAS_PROXIMAS = 0.009
 MAX_LINHAS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19']
 LEN_MAX_LINHAS = 20
 # Tempo para calcular menor rota de cada no_origem, em segundos
-SECONDS = 10
+SECONDS = 5
 RESET = 0
 # Dijkstra: indice da primeira linha de ônibus na lista 
 IDX_PRIMEIRA_LINHA = 0
@@ -29,7 +29,7 @@ def calculaNoProximo(G, long, lat):
     return noMaisPerto
 
 
-def calculaNosProximos(G, long, lat, raio):
+def calculaNosProximos(G, long, lat, raio=0.007):
     nos_proximos = []
     ponto = Point(long, lat)
     for node in G.nodes():
@@ -40,7 +40,7 @@ def calculaNosProximos(G, long, lat, raio):
     return nos_proximos
 
 
-def calculaRotaOtima(G_Direcional, nos_origem, no_destino, raio):
+def calculaRotaOtima(G_Direcional, nos_origem, no_destino, raio=0.500):
 
     def handletimeout(signum, frame):
         raise TimeoutError
