@@ -41,7 +41,6 @@ async def get_route(data: InputData):
   
     # 1. Rota de Baldeação (Caminhada) até Origem
     ## --------------------------------------------------------------------
-    tempo_inicial = time.time()
 
     start_point = (data.current_location.lat, data.current_location.lon)
     dest_point = (data.destiny_location.lat, data.destiny_location.lon)
@@ -56,14 +55,6 @@ async def get_route(data: InputData):
 
     paradas, linhas_usadas = rt.calculaRotaOtima(G_Direcional, nos_origem, no_destino)
 
-    # Teste sem paradas próximas umas das outras
-    # paradas = [7672, 7907, 7908, 3809, 3810, 6354, 7909, 7910, 3813, 7912, 7913, 3816, 7915, 7917, 7923, 5391, 4975, 4976]
-    # linhas_usadas = [None, '0.205', '0.205', '0.205', '0.205', '0.205', '0.205', '0.205', '0.255', '0.255', '0.205', '0.205', '0.255', '0.205', '0.205', '0.205', '0.205', '0.205']
-
-    # Teste com poucas paradas: 3 paradas e 2 linhas
-    # paradas = [7672, 7907, 7908]
-    # linhas_usadas = [None, '0.205', '0.205']
-
     paradas_info_json = rt.paradasELinhasToJson(G_Direcional, paradas, linhas_usadas)
 
     first_stop = paradas_info_json[0]
@@ -75,39 +66,32 @@ async def get_route(data: InputData):
     # Calcular a rota de baldeação
     baldeacao_coords_orig = calculate_route(start_point, end_point, G)
 
-    tempo_final = time.time()
-    tempo_total = tempo_final - tempo_inicial
-    print(f"Rota até Origem: {tempo_total}")
 
     # 2. Rota Veicular
     ## --------------------------------------------------------------------
 
-    tempo_inicial = time.time()
     
-    G_DF = ox.load_graphml("drive_true_distrito_federal.graphml")
+    G_DF = ox.load_graphml("leve_distrito_federal.graphml")
 
-    print(len(paradas_info_json))
+    nearest_edges = [ox.distance.nearest_edges(G_DF, stop["lon"], stop["lat"]) for stop in paradas_info_json]
 
-    nearest_nodes = [ox.distance.nearest_nodes(G_DF, stop["lon"], stop["lat"]) for stop in paradas_info_json]
+    # Pegando o primeiro nó de cada aresta encontrada para roteamento
+    nearest_nodes_from_edges = [edge[0] for edge in nearest_edges]
 
     all_routes = []
-    for i in range(len(nearest_nodes) - 1):
+    for i in range(len(nearest_nodes_from_edges) - 1):
         route_segment = nx.shortest_path(
-            G_DF, nearest_nodes[i], nearest_nodes[i + 1], weight='length')
+            G_DF, nearest_nodes_from_edges[i], nearest_nodes_from_edges[i + 1], weight='length')
         all_routes.extend(route_segment[:-1])
-    all_routes.append(nearest_nodes[-1])
+    all_routes.append(nearest_nodes_from_edges[-1])
 
     veicular_coords = [(G_DF.nodes[node]['y'], G_DF.nodes[node]['x'])
-                       for node in all_routes]
+                    for node in all_routes]
     
-    tempo_final = time.time()
-    tempo_total = tempo_final - tempo_inicial
-    print(f"Rota Veicular: {tempo_total}")
 
     # 3. Rota de Baldeação (Caminhada) até Destino
     ## -------------------------------------------------------------------- 
 
-    tempo_inicial = time.time()
 
     last_stop = paradas_info_json[len(paradas_info_json)-1]
     start_point = (last_stop["lat"], last_stop["lon"])
@@ -117,10 +101,6 @@ async def get_route(data: InputData):
 
     # Calcular a rota de baldeação
     baldeacao_coords_dest = calculate_route(start_point, dest_point, G)
-
-    tempo_final = time.time()
-    tempo_total = tempo_final - tempo_inicial
-    print(f"Rota até Destino: {tempo_total}")
     
     return {
         "baldeacao_orig": baldeacao_coords_orig,
