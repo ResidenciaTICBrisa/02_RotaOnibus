@@ -15,6 +15,7 @@ SECONDS = 5
 RESET = 0
 # Dijkstra: indice da primeira linha de ônibus na lista 
 IDX_PRIMEIRA_LINHA = 0
+minHeap = []
 
 
 def calculaNoProximo(G, long, lat):
@@ -112,18 +113,20 @@ def distancia_entre_nos(grafo, no_origem, no_destino):
     return geodesic(origem, destino).km
 
 
-def dijkstra(grafo, origem, destino, raio):
+def dijkstra(grafo, origem, destino, raio=0.500):
+    global minHeap
+
     distancias = {node: float('inf') for node in grafo.nodes}
     distancias[origem] = 0 
     predecessores = {}
     linhas = {}
 
     # Fila prioridade com: Distancia até o nó destino, Linha de Ônibus Atual, Nó atual
-    fila_prioridade = [(0, None, origem)]
+    heapq.heappush(minHeap, (0, None, origem))
 
-    while fila_prioridade:
+    while minHeap:
 
-        distancia_atual, linha_atual, no_atual = heapq.heappop(fila_prioridade)
+        distancia_atual, linha_atual, no_atual = heapq.heappop(minHeap)
 
         if no_atual == destino or (distancia_entre_nos(grafo, no_atual, destino) <= raio):
             caminho = []
@@ -147,7 +150,7 @@ def dijkstra(grafo, origem, destino, raio):
                 distancias[vizinho] = dist_atual_aux
                 linhas[vizinho] = linha_atual_aux
                 predecessores[vizinho] = no_atual
-                heapq.heappush(fila_prioridade, (dist_atual_aux, linha_atual_aux, vizinho))
+                heapq.heappush(minHeap, (dist_atual_aux, linha_atual_aux, vizinho))
                 continue
             
             if linha_atual_aux is None:
@@ -163,6 +166,6 @@ def dijkstra(grafo, origem, destino, raio):
                 distancias[vizinho] = dist_atual_aux
                 linhas[vizinho] = linha_atual_aux
                 predecessores[vizinho] = no_atual
-                heapq.heappush(fila_prioridade, (dist_atual_aux, linha_atual_aux, vizinho))
+                heapq.heappush(minHeap, (dist_atual_aux, linha_atual_aux, vizinho))
 
     return [], []
