@@ -1,4 +1,5 @@
 import heapq
+import networkx as nx
 from geopy.distance import geodesic
 from shapely.geometry import Point
 import signal
@@ -55,7 +56,11 @@ def calculaRotaOtima(G_Direcional, nos_origem, no_destino, raio=0.500):
 
         try:
             signal.alarm(SECONDS)
-            paradas, linhas_usadas = dijkstra(G_Direcional, no_origem, no_destino, raio)
+            # paradas, linhas_usadas = dijkstra(G_Direcional, no_origem, no_destino, raio)
+            paradas, _ = dijkstra(G_Direcional, no_origem, no_destino, raio)
+
+            linhas_usadas = calculaLinhasOnibusUsadas(G_Direcional, paradas)
+
             rotas_otimas.append(paradas)
             linhas_otimas.append(linhas_usadas)
         except TimeoutError:
@@ -79,7 +84,169 @@ def calculaRotaOtima(G_Direcional, nos_origem, no_destino, raio=0.500):
 
     indice = min(range(len(todasLinhas)), key=lambda i: len(todasLinhas[i]))
 
+
+
     return rotas_otimas[indice], linhas_otimas[indice]
+
+
+def dijkstra(grafo, origem, destino, raio=0.500):
+    global minHeap
+
+    distancias = {node: float('inf') for node in grafo.nodes}
+    distancias[origem] = 0 
+    predecessores = {}
+    linhas = {}
+
+    # Fila prioridade com: Distancia até o nó destino, Linha de Ônibus Atual, Nó atual
+    heapq.heappush(minHeap, (0, None, origem))
+
+    while minHeap:
+
+        distancia_atual, linha_atual, no_atual = heapq.heappop(minHeap)
+
+        if no_atual == destino or (calculaDistanciaEntreNos(grafo, no_atual, destino) <= raio):
+            caminho = []
+            linhas_caminho = []
+            while no_atual is not None:
+                caminho.append(no_atual)
+                linhas_caminho.append(linhas.get(no_atual))
+                no_atual = predecessores.get(no_atual)
+            return list(reversed(caminho)), list(reversed(linhas_caminho))
+
+        if distancia_atual > distancias[no_atual]:
+            continue
+
+        for vizinho in grafo.neighbors(no_atual):
+
+            linha_atual_aux = linha_atual
+            dist_atual_aux = distancia_atual
+            arestas = grafo.get_edge_data(no_atual, vizinho)
+
+            if calculaDistanciaEntreNos(grafo, no_atual, vizinho) <= RAIO_PARADAS_PROXIMAS: 
+                distancias[vizinho] = dist_atual_aux
+                linhas[vizinho] = linha_atual_aux
+                predecessores[vizinho] = no_atual
+                heapq.heappush(minHeap, (dist_atual_aux, linha_atual_aux, vizinho))
+                continue
+            
+            if linha_atual_aux is None:
+                dist_atual_aux += arestas['dist']
+                linha_atual_aux = arestas['linha'][IDX_PRIMEIRA_LINHA]
+            elif linha_atual_aux in arestas['linha']:
+                dist_atual_aux += arestas['dist']
+            else:
+                dist_atual_aux += PESO * arestas['dist']
+                linha_atual_aux = arestas['linha'][IDX_PRIMEIRA_LINHA]
+        
+            if distancia_atual < distancias[vizinho]:
+                distancias[vizinho] = dist_atual_aux
+                linhas[vizinho] = linha_atual_aux
+                predecessores[vizinho] = no_atual
+                heapq.heappush(minHeap, (dist_atual_aux, linha_atual_aux, vizinho))
+
+    return [], []
+
+
+# Função para calcular a distância euclidiana entre dois pontos
+def calculaDistanciaEntreNos(grafo, no_origem, no_destino):
+    origem = (grafo.nodes[no_origem]['coords'].y, grafo.nodes[no_origem]['coords'].x)
+    destino = (grafo.nodes[no_destino]['coords'].y, grafo.nodes[no_destino]['coords'].x)
+    return geodesic(origem, destino).km
+
+
+def calculaRotaOtimaNx(G, nos_origem, nos_destino):
+
+    def handletimeout():
+        raise TimeoutError
+
+    rotas_otimas = []
+    linhas_otimas = []
+
+    signal.signal(signal.SIGALRM, handletimeout)
+
+    for no_origem in nos_origem:
+        for no_destino in nos_destino:
+            try:
+                signal.alarm(5)
+                
+                paradas = nx.shortest_path(G, no_origem, no_destino, weight='dist', method='dijkstra')
+                linhas_usadas = calculaLinhasOnibusUsadas(G, paradas)
+
+                rotas_otimas.append(paradas)
+                linhas_otimas.append(linhas_usadas)
+            except TimeoutError:
+                paradas, linhas_usadas = [], MAX_LINHAS
+                rotas_otimas.append(paradas)
+                linhas_otimas.append(linhas_usadas)
+            finally:
+                signal.alarm(0)
+
+    indiceLinhaMenorQtdOnibus = None
+    menorQtdOnibus = 50
+
+    for idx, rota in enumerate(linhas_otimas):
+        linhas = []
+        qtdOnibus = 0
+
+        for linha in rota[1:]:
+            if linha not in linhas:
+                qtdOnibus += 1
+                linhas.append(linha)
+
+        if qtdOnibus < menorQtdOnibus:
+            menorQtdOnibus = qtdOnibus
+            indiceLinhaMenorQtdOnibus = idx
+
+    indice = indiceLinhaMenorQtdOnibus
+
+    return rotas_otimas[indice], linhas_otimas[indice]
+
+
+def calculaLinhasOnibusUsadas(G, paradas):
+
+    linhas = []
+
+    for i in range(1, len(paradas)):
+        orig = paradas[i-1]
+        dest = paradas[i]
+        linha_orig_dest = G[orig][dest].get('linha')
+        linhas.append(linha_orig_dest)
+
+    return encontrarLinhasOtimas(linhas)
+
+
+def encontrarLinhasOtimas(todasLinhas):
+
+    idx_atual = 0
+    linhasOtima_list = [None]
+
+    while ( idx_atual < len(todasLinhas) ):
+        idx_atual, linhas_longe = encontraLinhaMaisLonge(todasLinhas, idx_atual)
+        linhasOtima_list.extend(linhas_longe)
+        
+    return linhasOtima_list
+
+
+def encontraLinhaMaisLonge(todasLinhas, idx_atual):
+
+    indice_max = idx_atual
+    linha_max = todasLinhas[idx_atual][0]
+
+    for _, linha_y in enumerate(todasLinhas[idx_atual]):
+        prox_idx = idx_atual + 1
+        while prox_idx < len(todasLinhas):
+            if linha_y in todasLinhas[prox_idx]:
+                if prox_idx > indice_max:
+                    indice_max = prox_idx
+                    linha_max = linha_y
+            prox_idx += 1
+
+    repeticoes = (indice_max + 1) - idx_atual
+    idx_atual += repeticoes
+
+    linhasOtima_list = [linha_max] * repeticoes
+
+    return idx_atual, linhasOtima_list
 
 
 def paradasELinhasToJson(G, paradas, linhas_usadas):
@@ -104,68 +271,3 @@ def paradasELinhasToJson(G, paradas, linhas_usadas):
         paradas_info.append(parada_info)
     
     return paradas_info
-
-
-# Função para calcular a distância euclidiana entre dois pontos
-def distancia_entre_nos(grafo, no_origem, no_destino):
-    origem = (grafo.nodes[no_origem]['coords'].y, grafo.nodes[no_origem]['coords'].x)
-    destino = (grafo.nodes[no_destino]['coords'].y, grafo.nodes[no_destino]['coords'].x)
-    return geodesic(origem, destino).km
-
-
-def dijkstra(grafo, origem, destino, raio=0.500):
-    global minHeap
-
-    distancias = {node: float('inf') for node in grafo.nodes}
-    distancias[origem] = 0 
-    predecessores = {}
-    linhas = {}
-
-    # Fila prioridade com: Distancia até o nó destino, Linha de Ônibus Atual, Nó atual
-    heapq.heappush(minHeap, (0, None, origem))
-
-    while minHeap:
-
-        distancia_atual, linha_atual, no_atual = heapq.heappop(minHeap)
-
-        if no_atual == destino or (distancia_entre_nos(grafo, no_atual, destino) <= raio):
-            caminho = []
-            linhas_caminho = []
-            while no_atual is not None:
-                caminho.append(no_atual)
-                linhas_caminho.append(linhas.get(no_atual))
-                no_atual = predecessores.get(no_atual)
-            return list(reversed(caminho)), list(reversed(linhas_caminho))
-
-        if distancia_atual > distancias[no_atual]:
-            continue
-
-        for vizinho in grafo.neighbors(no_atual):
-
-            linha_atual_aux = linha_atual
-            dist_atual_aux = distancia_atual
-            arestas = grafo.get_edge_data(no_atual, vizinho)
-
-            if distancia_entre_nos(grafo, no_atual, vizinho) <= RAIO_PARADAS_PROXIMAS: 
-                distancias[vizinho] = dist_atual_aux
-                linhas[vizinho] = linha_atual_aux
-                predecessores[vizinho] = no_atual
-                heapq.heappush(minHeap, (dist_atual_aux, linha_atual_aux, vizinho))
-                continue
-            
-            if linha_atual_aux is None:
-                dist_atual_aux += arestas['dist']
-                linha_atual_aux = arestas['linha'][IDX_PRIMEIRA_LINHA]
-            elif linha_atual_aux in arestas['linha']:
-                dist_atual_aux += arestas['dist']
-            else:
-                dist_atual_aux += PESO * arestas['dist']
-                linha_atual_aux = arestas['linha'][IDX_PRIMEIRA_LINHA]
-        
-            if distancia_atual < distancias[vizinho]:
-                distancias[vizinho] = dist_atual_aux
-                linhas[vizinho] = linha_atual_aux
-                predecessores[vizinho] = no_atual
-                heapq.heappush(minHeap, (dist_atual_aux, linha_atual_aux, vizinho))
-
-    return [], []

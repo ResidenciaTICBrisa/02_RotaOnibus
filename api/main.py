@@ -55,6 +55,10 @@ async def get_route(data: InputData):
 
     paradas, linhas_usadas = rt.calculaRotaOtima(G_Direcional, nos_origem, no_destino)
 
+    if len(paradas) == 0:
+        nos_destino = rt.calculaNosProximos(G_Direcional, dest_point[1], dest_point[0])
+        paradas, linhas_usadas = rt.calculaRotaOtimaNx(G_Direcional, nos_origem, nos_destino)
+
     paradas_info_json = rt.paradasELinhasToJson(G_Direcional, paradas, linhas_usadas)
 
     first_stop = paradas_info_json[0]
@@ -92,8 +96,7 @@ async def get_route(data: InputData):
     # 3. Rota de Baldeação (Caminhada) até Destino
     ## -------------------------------------------------------------------- 
 
-
-    last_stop = paradas_info_json[len(paradas_info_json)-1]
+    last_stop = paradas_info_json[len(paradas_info_json) - 1]
     start_point = (last_stop["lat"], last_stop["lon"])
 
     # Baixar o mapa da área de interesse para cálculo da rota de caminhada
@@ -105,5 +108,6 @@ async def get_route(data: InputData):
     return {
         "baldeacao_orig": baldeacao_coords_orig,
         "rota_veicular": veicular_coords,
-        "baldeacao_dest": baldeacao_coords_dest
+        "baldeacao_dest": baldeacao_coords_dest,
+        "paradas": paradas_info_json
     }

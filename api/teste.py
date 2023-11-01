@@ -8,8 +8,8 @@ API_URL = "http://127.0.0.1:8000/calculate_route"
 lat_origin = -15.989444964529529
 lon_origin = -48.044418962814866
 
-lat_destiny = -15.864892647091217
-lon_destiny = -48.030234362882624
+lat_destiny = -15.818353856600432
+lon_destiny = -47.87465146311891
 
 # Definindo as paradas no body da requisição
 body = {
@@ -34,7 +34,7 @@ if response.status_code == 200:
     baldeacao_coords_orig = data['baldeacao_orig']
     rota_veicular_coords = data['rota_veicular']
     baldeacao_coords_dest = data['baldeacao_dest']
-    # paradas = data['paradas']
+    paradas = data['paradas']
 
     # Criando o mapa com folium centrado na origem
     m = folium.Map(location=[lat_origin, lon_origin], zoom_start=15)
@@ -44,12 +44,12 @@ if response.status_code == 200:
     folium.PolyLine(rota_veicular_coords, color="blue", weight=2.5).add_to(m)  # Rota veicular em azul
     folium.PolyLine(baldeacao_coords_dest, color="green", weight=2.5).add_to(m)  # Baldeação em verde
 
-    # for parada in paradas:
-    #     folium.Marker(
-    #         location=[parada['lat'], parada['lon']],
-    #         popup=f"ID da Parada: {parada['id_stop']}",  # Isso exibirá o ID da parada quando você clicar no marcador
-    #         icon=folium.Icon(color="blue")
-    #     ).add_to(m)
+    for parada in paradas:
+        folium.Marker(
+            location=[parada['lat'], parada['lon']],
+            popup=f"ID da Parada: {parada['id_stop']}",  # Isso exibirá o ID da parada quando você clicar no marcador
+            icon=folium.Icon(color="blue")
+        ).add_to(m)
 
     # Salva o mapa em um arquivo HTML e abre no navegador
     m.save("rota_onibus.html")
