@@ -42,11 +42,11 @@
   - **Sprint 5 (31/07 - 07/08)**
     
     - [Ata Reuniao 01/08/23](./AtaReuniao/AtaReuniao_0108.md)
-    - [Criando e salvando grafo do mapa](./Estudos/Lucas/criacaoSalvamentoGrafoLucas.md)
+    - [Criando e salvando grafo do mapa](./Estudos/criacaoSalvamentoGrafoLucas.md)
     - [Pseudoalgoritmo Rotas em Grafo](./Estudos/PseudoCodigo_RotasGrafos.md)
     - [Validação dos dados](./Estudos/validacaoLucas.md)
 
   - **Sprint 6**
     
-    - [Grafos em um único arquivo](./Estudos/Lucas/SalvandoVariosGrafosEstudoLucas.md)
+    - [Grafos em um único arquivo](./Estudos/SalvandoVariosGrafosEstudoLucas.md)
     - [Salvado paradas de rotas de ônibus em CSV](./Estudos/Paradas.md)
