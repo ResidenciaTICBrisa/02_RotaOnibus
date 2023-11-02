@@ -1,5 +1,6 @@
 import heapq
 import networkx as nx
+import osmnx as ox
 from geopy.distance import geodesic
 from shapely.geometry import Point
 import signal
@@ -40,6 +41,18 @@ def calculaNosProximos(G, long, lat, raio=0.007):
         if dist <= raio:
             nos_proximos.append(node)
     return nos_proximos
+
+
+def calculaRotaCaminhada(start_point, end_point, graph):
+    nearest_start = ox.distance.nearest_nodes(
+        graph, X=[start_point[1]], Y=[start_point[0]])[0]
+    nearest_end = ox.distance.nearest_nodes(
+        graph, X=[end_point[1]], Y=[end_point[0]])[0]
+    route = nx.shortest_path(graph, nearest_start,
+                             nearest_end, weight='length', method='dijkstra')
+    route_coords = [(graph.nodes[node]['y'], graph.nodes[node]['x'])
+                    for node in route]
+    return route_coords
 
 
 def calculaRotaOtima(G_Direcional, nos_origem, no_destino, raio=0.500):
