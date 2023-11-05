@@ -7,6 +7,9 @@
   - **Requisitos**
     - [Backlog](./EstruturaProjeto/backlog.md)
 
+- **Arquitetura**
+  - [Arquitetura v1](./Estudos/ArquiteturaAPI.md)
+
 - **Releases**
   - [Release 1](./Estudos/release1.md)
 
