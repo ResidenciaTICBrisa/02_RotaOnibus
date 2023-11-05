@@ -1,4 +1,4 @@
-# Análise do funcionamento das Rotas e sua conversão em Subgrafos
+# Análise do funcionamento das Rotas e sua visualização
 
 ## Introdução
 
@@ -74,10 +74,6 @@ folium.PolyLine(locations = coord_ida, color = 'green', tooltip = linestringFGA[
 #Plotando a volta
 folium.PolyLine(locations = coord_volta, color = 'red', tooltip = linestringFGA['linha'].iloc[0]+ ' ' + linestringFGA['sentido'].iloc[0]).add_to(mapa)
 ```
-
-## Identificando os pontos em comum nos arquivos
-
-## Referência
 
 ## Histórico de Versão
 

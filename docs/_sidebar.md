@@ -11,7 +11,7 @@
   - [Arquitetura v1](./Estudos/ArquiteturaAPI.md)
 
 - **Releases**
-  - [Release 1](./Estudos/release1.md)
+  - [Release 1](./EstruturaProjeto/release1.md)
 
 - **Sprints**
 
