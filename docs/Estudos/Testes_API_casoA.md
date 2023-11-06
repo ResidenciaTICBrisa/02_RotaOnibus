@@ -11,6 +11,7 @@ A seguir, estão listados os casos de teste executados:
 | Guará           | Campus Darcy Ribeiro | -15.828243, -48.031936 | -15.828243, -48.031936 |
 | Ceilândia       | Estrutural      | -15.812656, -48.095376    | -15.786965, -47.990523    |
 | Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
+|Riacho Fundo 1| Núcleo Bandeirante| -15.880012, -48.002800 | -15.866431, -47.965071 |
 
 As imagens correspondentes a cada teste podem ser visualizadas na pasta a seguir:
 [Imagens dos Testes](./assets/Testes-A)
