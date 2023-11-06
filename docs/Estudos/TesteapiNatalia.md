@@ -60,7 +60,7 @@ A seguir, estão listados os casos de teste executados:
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Rec-TshopAPI.png alt="API" style="width: 45%;" />
+        <img src="./assets/Testes/Rec-TshopAPI.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -73,7 +73,7 @@ A seguir, estão listados os casos de teste executados:
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Vic-tshopAPI.png alt="API" style="width: 45%;" />
+        <img src="./assets/Testes/Vic-tshopAPI.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -95,7 +95,7 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/FGA-rec102G.png alt="Google Maps" style="width: 45%;" />
+        <img src="./assets/Testes/FGA-rec102G.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
