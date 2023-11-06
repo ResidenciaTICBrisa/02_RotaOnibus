@@ -1,6 +1,8 @@
 # Testes da API para a Categoria A
 
-Categoria A: Testes de Sistema para navegar do Ponto de Origem ao Destino com um único ônibus.
+## Tipos de teste
+
+**Categoria A:** Testes de Sistema para navegar do Ponto de Origem ao Destino com um único ônibus.
 
 A seguir, estão listados os casos de teste executados:
 
@@ -13,10 +15,35 @@ A seguir, estão listados os casos de teste executados:
 | Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
 |Riacho Fundo 1| Núcleo Bandeirante| -15.880012, -48.002800 | -15.866431, -47.965071 |
 
-As imagens correspondentes a cada teste podem ser visualizadas na pasta a seguir:
-[Imagens dos Testes](./assets/Testes-A)
-Tabela de autoria do documento:
+As imagens correspondentes a cada teste podem ser visualizadas a seguir:
+
+### Recanto para Riacho Fundo 2
+
+![FIG1](./assets/Testes-A/recanto-riacho2.png)
+
+### Samambaia para Riacho Fundo 1
+
+![FIG2](./assets/Testes-A/samambaia-riacho.png)
+
+### Guará para Campus Darcy Ribeiro
+
+![FIG3](./assets/Testes-A/)
+
+
+### Ceilândia para Estrutural
+
+![FIG4](./assets/Testes-A/estrutural-ceilandia.png)
+
+### Taguatinga para EPTG/Aguas Claras
+
+![FIG5](./assets/Testes-A/taguatinga-aguasclaras.png)
+
+### Riacho Fundo 1 para Núcleo Bandeirante
+
+![FIG6](./assets/Testes-A/recanto-riacho2.png)
+
 
 | Autor:         | Data:           | Versão:         |
 |----------------|-----------------|-----------------|
-| [Luiz] | [5 nov] | [1.0] |
+| Luiz | 5 de novembro | 1.0  |
+| Luiz | 6 de novembro | 2.0  |
