@@ -13,7 +13,7 @@ A seguir, estão listados os casos de teste executados:
 | Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
 
 As imagens correspondentes a cada teste podem ser visualizadas na pasta a seguir:
-[Imagens dos Testes](./assets)
+[Imagens dos Testes](./assets/Testes-A)
 Tabela de autoria do documento:
 
 | Autor:         | Data:           | Versão:         |
