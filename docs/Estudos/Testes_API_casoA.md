@@ -1,10 +1,12 @@
-# Testes da API para a Categoria A
+# Testes API
 
-## Tipos de teste
+## Categorias dos testes
 
-**Categoria A:** Testes de Sistema para navegar do Ponto de Origem ao Destino com um único ônibus.
+**Categoria A:** Testes de Sistema para navegar do Ponto de Origem ao Destino com um único ônibus.  
+**Categoria B:**  Testes de Sistema que seja possível chegar da Origem ao Destino com Baldeação (trocas apenas de ônibus durante a rota).  
+**Categoria C:**  Testes de Sistema que seja possível chegar da Origem ao Destino com Baldeação de Ônibus (trocas de ônibus durante a rota) e Baldeação a pé ( andar de uma parada até a outra ).  
 
-A seguir, estão listados os casos de teste executados:
+A seguir, estão listados os casos realizados:
 
 |Categoria do teste | Origem          | Destino         | Coordenadas Origem        | Coordenadas Destino       | 
 |-|-----------------|-----------------|---------------------------|---------------------------|
@@ -13,8 +15,8 @@ A seguir, estão listados os casos de teste executados:
 || Guará           | Campus Darcy Ribeiro | -15.828243, -48.031936 | -15.828243, -48.031936 |
 |B| Ceilândia       | Estrutural      | -15.812656, -48.095376    | -15.786965, -47.990523    |
 || Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
-||Riacho Fundo 1| Núcleo Bandeirante| -15.880012, -48.002800 | -15.866431, -47.965071 |
-
+||Riacho Fundo 1| Núcleo Bandeirante| -15.880012, -48.002800 | -15.866431, -47.965071 |  
+  
 As imagens correspondentes a cada teste podem ser visualizadas a seguir:
 
 ### Recanto para Riacho Fundo 2
