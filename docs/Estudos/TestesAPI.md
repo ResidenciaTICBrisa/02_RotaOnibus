@@ -75,6 +75,11 @@ A seguir, estão listados os casos de teste executados:
 | Recanto         | Nucleo Bandeirante  | -15.902369945850355, -48.06114590425264 | -15.87053919722047, -47.970845583947956     |
 | Recanto         | Taguatinga shopping | -15.902369945850355, -48.06114590425264 | -15.838687092189542, -48.043740029911895    |
 | Vicente Pires   | taguatinga Shopping | -15.803336993126374, -48.01783002446128 | -15.838687092189542, -48.043740029911895    |
+| Recanto         | Riacho Fundo 2  |-15.921302, -48.103319     |-15.894646 -48.056028      |
+| Samambaia       | Riacho Fundo 1  | -15.888249, -48.108035    | -15.877328, -48.020540    |
+| Guará           | Campus Darcy Ribeiro | -15.828243, -48.031936 | -15.828243, -48.031936 |
+| Ceilândia       | Estrutural      | -15.812656, -48.095376    | -15.786965, -47.990523    |
+| Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
 
 
 ### Teste 1 - FGA - Recanto Q.801
@@ -143,6 +148,25 @@ A seguir, estão listados os casos de teste executados:
 </div>
 
 
+### Teste 6 - Recanto para Riacho Fundo 2  
+
+![FIG1](./assets/Testes-A/recanto-riacho2.png)  
+
+### Teste 7 - Samambaia para Riacho Fundo 1  
+
+![FIG2](./assets/Testes-A/samambaia-riacho.png)  
+
+### Teste 8 - Guará para Campus Darcy Ribeiro  
+
+
+### Teste 9 - Ceilândia para Estrutural  
+
+![FIG4](./assets/Testes-A/estrutural-ceilandia.png)  
+
+### Teste 10 - Taguatinga para EPTG/Aguas Claras  
+
+![FIG5](./assets/Testes-A/taguatinga-aguasclaras.png)  
+
 ## Testes Categoria B
 
 A seguir, estão listados os casos de teste executados:
@@ -193,6 +217,8 @@ A seguir, estão listados os casos de teste executados:
 </div>
 
 
+
+``
 
 ## Histórico de Versão
 
