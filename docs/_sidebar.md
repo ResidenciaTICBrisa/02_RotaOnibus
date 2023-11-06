@@ -10,6 +10,9 @@
 - **Arquitetura**
   - [Arquitetura v1](./Estudos/ArquiteturaAPI.md)
 
+- **Testes**
+  - [Testes de Sistema](./Estudos/TestesAPI.md)
+
 - **Releases**
   - [Release 1](./EstruturaProjeto/release1.md)
 
