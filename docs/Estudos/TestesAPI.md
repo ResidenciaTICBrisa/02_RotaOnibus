@@ -226,4 +226,4 @@ A seguir, estão listados os casos de teste executados:
 | :----: | :------------------: | :----------: | :-----: | :---: |
 |  1.0   | Criação do documento, testes de sistema e issue de testes | Leonardo Vitoriano |    -    | 06/11 |
 |  1.1   | 5 Testes categoria A, 3 categoria B | Natália |    -  | 06/11 |
-|  1.2   | 3 Testes categoria A, 3 categoria B | Natália |    -  | 06/11 |
+|  1.2   | 3 Testes categoria A, 3 categoria B | Luiz |    -  | 06/11 |  
