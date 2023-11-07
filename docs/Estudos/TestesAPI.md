@@ -223,7 +223,7 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-### Teste 15 -
+### Teste 15 - Hospital Santa Lúcia para Pátio Brasil
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -231,7 +231,7 @@ A seguir, estão listados os casos de teste executados:
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste04-2.png" alt="API" style="width: 45%;" />
+        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -246,7 +246,7 @@ A seguir, estão listados os casos de teste executados:
 | Recanto         | Sobradinho          | -15.902369945850355, -48.06114590425264 | -15.649050315402839, -47.79407366681607     |
 | Recanto         | Planaltina          | -15.902369945850355, -48.06114590425264 | -15.586737032575579, -47.68191991430089     |
 
-## Teste 1 - FGA - Recanto Q.102
+### Teste 1 - FGA - Recanto Q.102
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -259,7 +259,7 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-## Teste 2 - Recanto - Sobradinho
+### Teste 2 - Recanto - Sobradinho
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -272,7 +272,7 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-## Teste 3 - Recanto - Planaltina
+### Teste 3 - Recanto - Planaltina
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -285,9 +285,9 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
+### Teste 4 - Terminal BRT Gama para Memorial Darcy Ribeiro
 
-
-``
+### Teste 5 - 
 
 ## Histórico de Versão
 
@@ -295,4 +295,5 @@ A seguir, estão listados os casos de teste executados:
 | :----: | :------------------: | :----------: | :-----: | :---: |
 |  1.0   | Criação do documento, testes de sistema e issue de testes | Leonardo Vitoriano |    -    | 06/11 |
 |  1.1   | 5 Testes categoria A, 3 categoria B | Natália |    -  | 06/11 |
-|  1.2   | 3 Testes categoria A, 3 categoria B | Luiz |    -  | 06/11 |  
+|  1.2   | 3 Testes categoria A, 3 categoria B | Luiz |    -  | 06/11 |
+|  1.3   | 5 Testes categoria A, 4 categoria B | João Leles | - | 06/11|
