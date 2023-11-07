@@ -68,23 +68,29 @@ Os Testes de Sistema pode ser categorizados da seguinte forma:
 
 A seguir, estão listados os casos de teste executados:
 
-| Origem          | Destino         | Coordenadas Origem        | Coordenadas Destino       |
-|-----------------|-----------------|---------------------------|---------------------------|
-| FGA             | Recanto Q.801       |-15.989444964529529, -48.044418962814866 |-15.919392602743956, -48.051763232078855    |
-| FGA             | Riacho Fundo 2      | -15.989444964529529, -48.044418962814866| -15.905081947923286, -48.05133180235249     |
-| Recanto         | Nucleo Bandeirante  | -15.902369945850355, -48.06114590425264 | -15.87053919722047, -47.970845583947956     |
-| Recanto         | Taguatinga shopping | -15.902369945850355, -48.06114590425264 | -15.838687092189542, -48.043740029911895    |
-| Vicente Pires   | taguatinga Shopping | -15.803336993126374, -48.01783002446128 | -15.838687092189542, -48.043740029911895    |
-| Recanto         | Riacho Fundo 2  |-15.921302, -48.103319     |-15.894646 -48.056028      |
-| Samambaia       | Riacho Fundo 1  | -15.888249, -48.108035    | -15.877328, -48.020540    |
-| Guará           | Campus Darcy Ribeiro | -15.828243, -48.031936 | -15.828243, -48.031936 |
-| Ceilândia       | Estrutural      | -15.812656, -48.095376    | -15.786965, -47.990523    |
-| Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
-| CBV      | Hospital Santa Lúcia | -15.8333868, -47.9100341 | -15.8279719, -47.9296187   |
-| Igrejinha    | Mané Garrincha | -15.8140371, -47.9037448 | 15.7839301, -47.8991778   |
-| Estação 114 sul | Terminal BRT Gama | -15.8302632, -47.9205791 | -15.9914595, -48.0491983    |
-| Estação 114 sul | Terminal BRT Santa Maria | -15.8302632, -47.9205791 | -16.0023663, -47.986361 |
-| Hospital Santa Lúcia | Pátio Brasil | -15.8279719, -47.9296187 |-15.796842, -47.8921244 |
+| Origem          | Destino                 | Coordenadas Origem                        | Coordenadas Destino                      |
+|-----------------|-------------------------|-------------------------------------------|----------------------------------------|
+| FGA             | Recanto Q.801           | -15.989444964529529, -48.044418962814866 | -15.919392602743956, -48.051763232078855 |
+| FGA             | Riacho Fundo 2          | -15.989444964529529, -48.044418962814866 | -15.905081947923286, -48.05133180235249  |
+| Recanto         | Núcleo Bandeirante      | -15.902369945850355, -48.06114590425264  | -15.87053919722047, -47.970845583947956  |
+| Recanto         | Taguatinga shopping     | -15.902369945850355, -48.06114590425264  | -15.838687092189542, -48.043740029911895 |
+| Vicente Pires   | Taguatinga Shopping     | -15.803336993126374, -48.01783002446128  | -15.838687092189542, -48.043740029911895 |
+| Recanto         | Riacho Fundo 2          | -15.921302, -48.103319                   | -15.894646, -48.056028                   |
+| Samambaia       | Riacho Fundo 1          | -15.888249, -48.108035                   | -15.877328, -48.020540                   |
+
+| Ceilândia       | Estrutural              | -15.812656, -48.095376                   | -15.786965, -47.990523                   |
+| Taguatinga      | EPTG/Aguas Claras        | -15.819585, -48.057347                   | -15.828243, -48.031936                   |
+| CBV             | Hospital Santa Lúcia    | -15.8333868, -47.9100341                 | -15.8279719, -47.9296187                 |
+| Igrejinha       | Mané Garrincha          | -15.8140371, -47.9037448                 | -15.7839301, -47.8991778                 |
+| Estação 114 sul | Terminal BRT Gama       | -15.8302632, -47.9205791                 | -15.9914595, -48.0491983                 |
+| Estação 114 sul | Terminal BRT Santa Maria | -15.8302632, -47.9205791                 | -16.0023663, -47.986361                  |
+| Hospital Santa Lúcia | Pátio Brasil        | -15.8279719, -47.9296187                 | -15.796842, -47.8921244                 |
+| Riacho Fundo 1| Aeroporto de Brasília | -15.880597, -48.018826   | -15.869636, -47.921991                   |
+| Núcleo Bandeirante |São Sebastião      | -15.869801, -47.965571   | -15.900315, -47.779724                   |
+| Guará| Sudoeste                  | -15.816815, -47.980708   | -15.797054, -47.921348                   |
+| Candangolandia| Asa Norte             | -15.853798, -47.949071   | -15.752734, -47.886322                   |
+| Vicente | Pires Guará 2                | -15.803186, -48.031090   | -15.829073, -47.978382                   |
+
 
 ### Teste 1 - FGA - Recanto Q.801
 
@@ -154,22 +160,68 @@ A seguir, estão listados os casos de teste executados:
 
 ### Teste 6 - Recanto para Riacho Fundo 2  
 
-![FIG1](./assets/Testes-A/recanto-riacho2.png)  
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/recanto-riacho2-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/recanto-riacho2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
 
 ### Teste 7 - Samambaia para Riacho Fundo 1  
 
-![FIG2](./assets/Testes-A/samambaia-riacho.png)  
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/samambaia-riacho-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/samambaia-riacho.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
 
-### Teste 8 - Guará para Campus Darcy Ribeiro  
+### Teste 8 - Riacho fundo 1 para Aeroporto de Brasília
 
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/riacho-aeroporto-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/riacho-aeroporto.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
 
 ### Teste 9 - Ceilândia para Estrutural  
 
-![FIG4](./assets/Testes-A/estrutural-ceilandia.png)  
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/estrutural-ceilandia.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/ceilandia-estrutural-google.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
 
 ### Teste 10 - Taguatinga para EPTG/Aguas Claras  
 
-![FIG5](./assets/Testes-A/taguatinga-aguasclaras.png)  
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/taguating-eptg-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/taguatinga-aguasclaras.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
 
 ### Teste 11 - CBV - Hospital Santa Lúcia
 
@@ -235,6 +287,61 @@ A seguir, estão listados os casos de teste executados:
         <p>API</p>
     </div>
 </div>
+
+
+### Teste 16 - Núcleo Bandeirante São Sebastião  
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/bandeirante-sao-sebastiao-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/bandeirante-sao-sebastiao.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+
+### Teste 17 - Guará para Sudoeste  
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/guara-sudoeste-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/guara-sudoeste.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 18 - Candangolandia Asa Norte 
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/candangolandia-asa-norte-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/candangolandia-asa-norte.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 19 - Vicente Pires para Guara 2 
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/vicente-guara-google.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes-A/vicente-guara.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
 
 ## Testes Categoria B
 
@@ -351,3 +458,4 @@ A seguir, estão listados os casos de teste executados:
 |  1.1   | 5 Testes categoria A, 3 categoria B | Natália |    -  | 06/11 |
 |  1.2   | 3 Testes categoria A, 3 categoria B | Luiz |    -  | 06/11 |
 |  1.3   | 5 Testes categoria A, 4 categoria B | João Leles | - | 06/11|
+|  1.5   | 5 Testes categoria A, 4 categoria B | Luiz | - | 07/11|
