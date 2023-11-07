@@ -80,7 +80,11 @@ A seguir, estão listados os casos de teste executados:
 | Guará           | Campus Darcy Ribeiro | -15.828243, -48.031936 | -15.828243, -48.031936 |
 | Ceilândia       | Estrutural      | -15.812656, -48.095376    | -15.786965, -47.990523    |
 | Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
-
+| CBV      | Hospital Santa Lúcia | -15.8333868,-47.9100341 | -15.8279719,-47.9296187   |
+| Igrejinha    | Mané Garrincha | -15.8140371,-47.9037448 | 15.7839301,-47.8991778   |
+| Estação 114 sul | Terminal BRT Gama | -15.8302632,-47.9205791 | -15.9914595,-48.0491983    |
+| Estação 114 sul | Terminal BRT Santa Maria | -15.8302632,-47.9205791 | -16.0023663,-47.986361 |
+| Hospital Santa Lúcia | Pátio Brasil | -15.8279719,-47.9296187 |-15.796842,-47.8921244 |
 
 ### Teste 1 - FGA - Recanto Q.801
 
@@ -166,6 +170,71 @@ A seguir, estão listados os casos de teste executados:
 ### Teste 10 - Taguatinga para EPTG/Aguas Claras  
 
 ![FIG5](./assets/Testes-A/taguatinga-aguasclaras.png)  
+
+### Teste 11 - CBV para Hospital Santa Lúcia
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste01-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste01-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 12 - Igrejinha Nossa Senhora de Fátima para Mané Garrincha
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste02-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste02-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 13 - Estação 114 Sul para Terminal BRT Gama
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste03-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste03-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 14 - Estação 114 Sul para Terminal BRT Santa Maria
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste04-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste04-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 15 -
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste04-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
 
 ## Testes Categoria B
 
