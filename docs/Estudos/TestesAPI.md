@@ -80,11 +80,11 @@ A seguir, estão listados os casos de teste executados:
 | Guará           | Campus Darcy Ribeiro | -15.828243, -48.031936 | -15.828243, -48.031936 |
 | Ceilândia       | Estrutural      | -15.812656, -48.095376    | -15.786965, -47.990523    |
 | Taguatinga      | EPTG/Aguas Claras | -15.819585, -48.057347 | -15.828243, -48.031936    |
-| CBV      | Hospital Santa Lúcia | -15.8333868,-47.9100341 | -15.8279719,-47.9296187   |
-| Igrejinha    | Mané Garrincha | -15.8140371,-47.9037448 | 15.7839301,-47.8991778   |
-| Estação 114 sul | Terminal BRT Gama | -15.8302632,-47.9205791 | -15.9914595,-48.0491983    |
-| Estação 114 sul | Terminal BRT Santa Maria | -15.8302632,-47.9205791 | -16.0023663,-47.986361 |
-| Hospital Santa Lúcia | Pátio Brasil | -15.8279719,-47.9296187 |-15.796842,-47.8921244 |
+| CBV      | Hospital Santa Lúcia | -15.8333868, -47.9100341 | -15.8279719, -47.9296187   |
+| Igrejinha    | Mané Garrincha | -15.8140371, -47.9037448 | 15.7839301, -47.8991778   |
+| Estação 114 sul | Terminal BRT Gama | -15.8302632, -47.9205791 | -15.9914595, -48.0491983    |
+| Estação 114 sul | Terminal BRT Santa Maria | -15.8302632, -47.9205791 | -16.0023663, -47.986361 |
+| Hospital Santa Lúcia | Pátio Brasil | -15.8279719, -47.9296187 |-15.796842, -47.8921244 |
 
 ### Teste 1 - FGA - Recanto Q.801
 
@@ -244,7 +244,11 @@ A seguir, estão listados os casos de teste executados:
 |-----------------|-----------------|---------------------------|---------------------------|
 | FGA             | Recanto Q.102       |-15.989444964529529, -48.044418962814866 |-15.919392602743956, -48.051763232078855    |
 | Recanto         | Sobradinho          | -15.902369945850355, -48.06114590425264 | -15.649050315402839, -47.79407366681607     |
-| Recanto         | Planaltina          | -15.902369945850355, -48.06114590425264 | -15.586737032575579, -47.68191991430089     |
+| Recanto| Planaltina| -15.902369945850355, -48.06114590425264 | -15.586737032575579, -47.68191991430089 |
+| Terminal BRT Gama| Memorial Darcy Ribeiro| -15.9912208, -48.0487807 | -15.7638304, -47.8659154 |
+| Terminal BRT Gama| Jardim Botânico| -15.9912208, -48.0487807 | -15.865642, -47.8193032 |
+| Estádio Bezerrão | Rodoviária do Plano Piloto| -16.0113743, -48.0615323 | -15.7939146, -47.8828478 |
+| Terminal BRT Gama | Piér 21 | -15.9912208, -48.0487807 | -15.8183751, -47.874731|
 
 ### Teste 1 - FGA - Recanto Q.102
 
@@ -293,7 +297,7 @@ A seguir, estão listados os casos de teste executados:
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <img src="./assets/Testes/Teste06-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -302,11 +306,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="./assets/Testes/Teste07-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <img src="./assets/Testes/Teste07-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -315,11 +319,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="./assets/Testes/Teste08-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <img src="./assets/Testes/Teste08-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -328,11 +332,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="./assets/Testes/Teste09-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <img src="./assets/Testes/Teste09-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
