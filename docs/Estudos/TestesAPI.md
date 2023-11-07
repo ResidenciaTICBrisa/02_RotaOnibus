@@ -171,7 +171,7 @@ A seguir, estão listados os casos de teste executados:
 
 ![FIG5](./assets/Testes-A/taguatinga-aguasclaras.png)  
 
-### Teste 11 - CBV para Hospital Santa Lúcia
+### Teste 11 - CBV - Hospital Santa Lúcia
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -184,7 +184,7 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-### Teste 12 - Igrejinha Nossa Senhora de Fátima para Mané Garrincha
+### Teste 12 - Igrejinha Nossa Senhora de Fátima - Mané Garrincha
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -197,7 +197,7 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-### Teste 13 - Estação 114 Sul para Terminal BRT Gama
+### Teste 13 - Estação 114 Sul - Terminal BRT Gama
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -210,7 +210,7 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-### Teste 14 - Estação 114 Sul para Terminal BRT Santa Maria
+### Teste 14 - Estação 114 Sul - Terminal BRT Santa Maria
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -223,7 +223,7 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-### Teste 15 - Hospital Santa Lúcia para Pátio Brasil
+### Teste 15 - Hospital Santa Lúcia - Pátio Brasil
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
@@ -285,9 +285,59 @@ A seguir, estão listados os casos de teste executados:
     </div>
 </div>
 
-### Teste 4 - Terminal BRT Gama para Memorial Darcy Ribeiro
+### Teste 4 - Terminal BRT Gama - Memorial Darcy Ribeiro
 
-### Teste 5 - 
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste06-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 5 - Terminal BRT Gama - Jardim Botânico
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 6 - Estádio Bezerrão - Rodoviária do Plano Piloto
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+### Teste 7 - Terminal BRT Gama - Piér 21 
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <p>API</p>
+    </div>
+</div>
+
+
 
 ## Histórico de Versão
 
