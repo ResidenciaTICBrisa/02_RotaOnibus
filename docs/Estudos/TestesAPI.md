@@ -93,66 +93,82 @@ A seguir, estão listados os casos de teste executados:
 
 ### Teste 1 - FGA - Recanto Q.801
 
+
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/FGA-rec801G.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/FGA-rec801API.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 2 - FGA - Riacho fundo 2
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/FGA-riacho2G.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/FGA-riacho2G.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/FGA-riacho2API.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/FGA-riacho2API.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 3 - Recanto - Nucleo Bandeirante
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Rec-nbandG.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Rec-nbandG.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/rec-nbandAPI.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/rec-nbandAPI.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 4 - Recanto - Taguatinga shopping
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Rec-TshopG.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Rec-TshopG.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Rec-TshopAPI.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Rec-TshopAPI.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 5 - Vicente Pires - Taguatinga shopping
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Vic-tshopG.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Vic-tshopG.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Vic-tshopAPI.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Vic-tshopAPI.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
@@ -160,130 +176,160 @@ A seguir, estão listados os casos de teste executados:
 ### Teste 6 - Recanto para Riacho Fundo 2  
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/recanto-riacho2-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/recanto-riacho2-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/recanto-riacho2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/recanto-riacho2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 7 - Samambaia para Riacho Fundo 1  
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/samambaia-riacho-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/samambaia-riacho-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/samambaia-riacho.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/samambaia-riacho.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 8 - Riacho fundo 1 para Aeroporto de Brasília
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/riacho-aeroporto-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/riacho-aeroporto-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/riacho-aeroporto.png" alt="API" style="width: 45%;" />
-        <p>API</p>
-    </div>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/riacho-aeroporto.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
+    </div>|
 </div>
 
 ### Teste 9 - Ceilândia para Estrutural  
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/estrutural-ceilandia.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/estrutural-ceilandia.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/ceilandia-estrutural-google.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/ceilandia-estrutural-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 10 - Taguatinga para EPTG/Aguas Claras  
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/taguating-eptg-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/taguating-eptg-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/taguatinga-aguasclaras.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/taguatinga-aguasclaras.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 11 - CBV - Hospital Santa Lúcia
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste01-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste01-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste01-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste01-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 12 - Igrejinha Nossa Senhora de Fátima - Mané Garrincha
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste02-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste02-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste02-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste02-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 13 - Estação 114 Sul - Terminal BRT Gama
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste03-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste03-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste03-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste03-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 14 - Estação 114 Sul - Terminal BRT Santa Maria
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste04-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste04-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste04-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste04-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 15 - Hospital Santa Lúcia - Pátio Brasil
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste05-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste05-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
@@ -291,13 +337,16 @@ A seguir, estão listados os casos de teste executados:
 ### Teste 16 - Núcleo Bandeirante São Sebastião  
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/bandeirante-sao-sebastiao-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/bandeirante-sao-sebastiao-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/bandeirante-sao-sebastiao.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/bandeirante-sao-sebastiao.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
@@ -305,39 +354,48 @@ A seguir, estão listados os casos de teste executados:
 ### Teste 17 - Guará para Sudoeste  
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/guara-sudoeste-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/guara-sudoeste-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/guara-sudoeste.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/guara-sudoeste.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 18 - Candangolandia Asa Norte 
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/candangolandia-asa-norte-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/candangolandia-asa-norte-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/candangolandia-asa-norte.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/guara-sudoeste.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 19 - Vicente Pires para Guara 2 
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/vicente-guara-google.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes-A/vicente-guara-google.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes-A/vicente-guara.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes-A/vicente-guara.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
@@ -359,94 +417,114 @@ A seguir, estão listados os casos de teste executados:
 ### Teste 1 - FGA - Recanto Q.102
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/FGA-rec102G.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/FGA-rec102G.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/FGA-recQ102API.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/FGA-recQ102API.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 2 - Recanto - Sobradinho
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/rec-sobraG.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/rec-sobraG.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/rec-sobAPI.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/rec-sobAPI.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 3 - Recanto - Planaltina
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/REC-planG.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/REC-planG.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Rec-planalAPI.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Rec-planalAPI.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 4 - Terminal BRT Gama - Memorial Darcy Ribeiro
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste06-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste06-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste06-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste06-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 5 - Terminal BRT Gama - Jardim Botânico
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste07-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste07-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste07-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste07-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 6 - Estádio Bezerrão - Rodoviária do Plano Piloto
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste08-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste08-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste08-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste08-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
 
 ### Teste 7 - Terminal BRT Gama - Piér 21 
 
 <div style="display: flex; justify-content: space-between;">
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste09-1.png" alt="Google Maps" style="width: 45%;" />
-        <p>Google Maps</p>
+    <div style="text-align: center; width: 45%;">
+
+![Google Maps](assets/Testes/Teste09-1.png)
+        <!-- <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <p>Google Maps</p> -->
     </div>
-    <div style="text-align: center;">
-        <img src="assets/Testes/Teste09-2.png" alt="API" style="width: 45%;" />
-        <p>API</p>
+    <div style="text-align: center; width: 45%;">
+![API](assets/Testes/Teste09-2.png)
+        <!-- <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <p>API</p> -->
     </div>
 </div>
-
 
 
 ## Histórico de Versão
