@@ -77,7 +77,6 @@ A seguir, estão listados os casos de teste executados:
 | Vicente Pires   | Taguatinga Shopping     | -15.803336993126374, -48.01783002446128  | -15.838687092189542, -48.043740029911895 |
 | Recanto         | Riacho Fundo 2          | -15.921302, -48.103319                   | -15.894646, -48.056028                   |
 | Samambaia       | Riacho Fundo 1          | -15.888249, -48.108035                   | -15.877328, -48.020540                   |
-
 | Ceilândia       | Estrutural              | -15.812656, -48.095376                   | -15.786965, -47.990523                   |
 | Taguatinga      | EPTG/Aguas Claras        | -15.819585, -48.057347                   | -15.828243, -48.031936                   |
 | CBV             | Hospital Santa Lúcia    | -15.8333868, -47.9100341                 | -15.8279719, -47.9296187                 |
@@ -96,11 +95,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/FGA-rec801G.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/FGA-rec801API.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -109,11 +108,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/FGA-riacho2G.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/FGA-riacho2G.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/FGA-riacho2API.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/FGA-riacho2API.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -122,11 +121,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Rec-nbandG.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Rec-nbandG.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/rec-nbandAPI.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/rec-nbandAPI.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -135,11 +134,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Rec-TshopG.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Rec-TshopG.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Rec-TshopAPI.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Rec-TshopAPI.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -148,11 +147,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Vic-tshopG.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Vic-tshopG.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Vic-tshopAPI.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Vic-tshopAPI.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -162,11 +161,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/recanto-riacho2-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/recanto-riacho2-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/recanto-riacho2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/recanto-riacho2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -175,11 +174,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/samambaia-riacho-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/samambaia-riacho-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/samambaia-riacho.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/samambaia-riacho.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -188,11 +187,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/riacho-aeroporto-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/riacho-aeroporto-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/riacho-aeroporto.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/riacho-aeroporto.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -201,11 +200,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/estrutural-ceilandia.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/estrutural-ceilandia.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/ceilandia-estrutural-google.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/ceilandia-estrutural-google.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -214,11 +213,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/taguating-eptg-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/taguating-eptg-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/taguatinga-aguasclaras.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/taguatinga-aguasclaras.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -227,11 +226,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste01-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste01-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste01-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste01-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -240,11 +239,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste02-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste02-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste02-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste02-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -253,11 +252,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste03-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste03-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste03-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste03-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -266,11 +265,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste04-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste04-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste04-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste04-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -279,11 +278,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste05-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste05-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -293,11 +292,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/bandeirante-sao-sebastiao-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/bandeirante-sao-sebastiao-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/bandeirante-sao-sebastiao.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/bandeirante-sao-sebastiao.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -307,11 +306,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/guara-sudoeste-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/guara-sudoeste-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/guara-sudoeste.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/guara-sudoeste.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -320,11 +319,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/candangolandia-asa-norte-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/candangolandia-asa-norte-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/candangolandia-asa-norte.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/candangolandia-asa-norte.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -333,11 +332,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/vicente-guara-google.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes-A/vicente-guara-google.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes-A/vicente-guara.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes-A/vicente-guara.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -361,11 +360,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/FGA-rec102G.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/FGA-rec102G.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/FGA-recQ102API.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/FGA-recQ102API.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -374,11 +373,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/rec-sobraG.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/rec-sobraG.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/rec-sobAPI.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/rec-sobAPI.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -387,11 +386,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/REC-planG.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/REC-planG.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Rec-planalAPI.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Rec-planalAPI.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -400,11 +399,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste06-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste06-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste06-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste06-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -413,11 +412,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste07-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste07-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste07-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste07-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -426,11 +425,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste08-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste08-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste08-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste08-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
@@ -439,11 +438,11 @@ A seguir, estão listados os casos de teste executados:
 
 <div style="display: flex; justify-content: space-between;">
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste09-1.png" alt="Google Maps" style="width: 45%;" />
+        <img src="assets/Testes/Teste09-1.png" alt="Google Maps" style="width: 45%;" />
         <p>Google Maps</p>
     </div>
     <div style="text-align: center;">
-        <img src="./assets/Testes/Teste09-2.png" alt="API" style="width: 45%;" />
+        <img src="assets/Testes/Teste09-2.png" alt="API" style="width: 45%;" />
         <p>API</p>
     </div>
 </div>
